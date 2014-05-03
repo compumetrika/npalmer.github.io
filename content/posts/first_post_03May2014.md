@@ -6,4 +6,4 @@ Slug: my-first-post
 Author: Nathan Palmer
 Summary: Short intro to try out Pelican!
 
-This is the content of my first super post. Note that this is just a plain typed-out thingy.
+First test post. Launch worked, excellent. 
