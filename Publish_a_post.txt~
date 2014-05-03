@@ -1,0 +1,54 @@
+Notes on process of writing posts/pages:
+
+    - Make sure that Pelican environment is running:
+        source activate blogging
+        [todeactivate:   source deactivate blogging]
+    
+    - Write up the page in Markdown. 
+    
+    - Execute the pelican command to create the page(s):
+        
+        $ pelican ~/Sites/compumetrika/npalmer.github.io/content/   
+            # Must run the address to the "content" page. 
+            # NOTE ALSO: run this from the "main" file page -- npalmer.github.io
+            # -- seems to need some settings here. Also create the output/ dir
+            # if it doesn't already exist.
+    
+        NOTE: to create everything and output it to the *base* directory, for 
+              instant publishing, this command will do that:
+        
+        $ cd ~/Sites/compumetrika/npalmer.github.io/
+        $ pelican content/ -o ./   
+        or
+        $ pelican ~/Sites/compumetrika/npalmer.github.io/ -o ~/Sites/compumetrika/npalmer.github.io/
+        
+        ALSO NOTE: There's probably a way to automatically write the "index.html"
+        file such that it points *down one level* to ./output/* and keeps everything 
+        clean at the top level. look into this as well. 
+    
+    
+    - start up a little local server and check out the page:
+        $ cd ./output
+        $ python -m SimpleHTTPServer
+
+      Then point a browser to 127.0.0.1:8000 and see how it looks. 
+      
+      [Sweet, first post looks great!]
+      
+      Alternatively, can look at the site like this:
+        make devserver
+        ./develop_server.sh stop    # To stop the server -- ctrl+c won't do it.
+   
+    - If everything looks goo, need to push it to publishing.
+        -- NOTE: looks like I may need to create/save a a githubpages branch. Hmmm. Look into.
+        -- Note: So one "organizational" option is to simply dump everything into the same place. 
+           This is much more "messy," but also keeps everything in one location. 
+           Otherwise, I'll have to host the "generating" content and the actual output in seperate repositories. 
+           In a future site, I may use something like two repositories, OR a simple 
+           github page with the "page" section as the blog/site. 
+           
+           Here and now, however, want everything in one place, in one package. 
+           
+           
+           
+
