@@ -4,6 +4,6 @@ Category: posts
 Tags: pelican, publishing
 Slug: my-first-post
 Author: Nathan Palmer
-Summary: Short intro to try out Pelican!
+Summary: A very quick test post.  
 
 First test post. Launch worked, excellent. 
