@@ -1,0 +1,532 @@
+/* Krasnow Institute */
+/* Original Design by Josh Hughes <http://www.deaghean.com> */
+
+/* @group Basics */
+images
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	background: #fff;
+	color: #333;
+	font: 75% Verdana, Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+p, ul, ol, dl, pre, h1, h2, h3, h4, h5, h6, dd, address, blockquote, table, fieldset
+{
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+
+p
+{
+	line-height: 1.5em;
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6
+{
+	font: bold 1.4em Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+h1, h2
+{
+	font-size: 2.2em;
+	color: #066;
+}
+
+h3
+{
+	font-size: 1.8em;
+}
+
+h4
+{
+	font-size: 1.4em;
+	margin-bottom: 5px;
+}
+
+h5
+{
+	font-size: 1.2em;
+}
+
+h6
+{
+	margin: 0 0 6px 0;
+}
+
+/* Links */
+
+a, a:link
+{
+	color: #066;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover, a:active
+{
+	color: #015252;
+}
+
+a:visited
+{
+	color: #066;
+}
+
+/* Lists */
+
+ul, ol
+{
+	padding: 0 0 0 20px;
+}
+
+ul
+{
+	list-style: url(images/bullet.gif);
+}
+
+ul ul
+{
+	list-style: circle;
+}
+
+li
+{
+	margin: 0 0 3px 0;
+}
+
+ul ul, ul ol, ol ul, ol ol
+{
+	margin: 0;
+}
+
+ul ul, ol ul
+{
+	list-style: circle;
+}
+
+/* Tables */
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: hidden;
+}
+
+td, th
+{
+/*	border: 2px solid #ccc; */
+	vertical-align: top;
+}
+
+tfoot td,
+tfoot th
+{
+	border: 0;
+	font-size: 0.8em;
+	color: #666;
+}
+
+td, th, caption
+{
+	padding: 5px;
+}
+
+th, caption
+{
+	text-align: left;
+}
+
+/* Forms */
+
+fieldset
+{
+	border: 2px solid #ccc;
+	padding: 6px 12px 12px 12px;
+}
+
+legend
+{
+	font: bold 1.8em Calibri, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #066;
+}
+
+input[type=text], textarea
+{
+	border: 2px solid #ccc;
+	padding: 6px;
+}
+
+/* Code */
+
+code, pre, samp, var, kbd
+{
+	font: 1em Consolas, Monaco, "Courier New", Courier, mono;
+}
+
+code
+{
+	border-left: 5px solid #ccc;
+	padding-left: 10px;
+	display: block;
+}
+
+/* Random Block Elements */
+
+hr
+{
+	clear: both;
+	visibility: hidden;
+}
+
+address
+{
+	font-style: normal;
+}
+
+dt
+{
+	font-weight: bold;
+}
+
+/* Random Inline Elements */
+
+acronym, abbr
+{
+	border-bottom: 1px dotted #333;
+	cursor: help;
+}
+
+del
+{
+	color: #900;
+	text-decoration: line-through;
+}
+
+ins
+{
+	color: #063;
+	text-decoration: none;
+}
+
+dfn
+{
+	font-weight: bold;
+	font-style: normal;
+}
+
+cite
+{
+	font-style: italic;
+}
+
+img
+{
+	border: 2px;
+    margin-right: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+/* @end */
+
+/* @group Layout */
+
+#footer {
+  padding: 1em;
+  font-size: 0.8em;
+  z-index: -1;
+  display: block;
+  clear: both;
+  text-align: center;
+}
+
+iframe {
+    display: block;
+	border:0;
+	outline:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font:12px/15px "Trebuchet MS","Lucida Sans",Verdana,Arial,Helvetica,sans-serif;
+	color:#333;
+	margin:0;
+	padding:0;
+    overflow: hidden;
+}
+
+#page-container
+{
+	width: 760px;
+	margin: 0 auto;
+	position: relative;
+	background: url(images/side_bar.gif) repeat-y;
+	min-height: 100%; 
+}
+
+#page-container:after
+{
+    content: ".";
+    display: block;
+    min-height: 100%;
+    clear: both;
+    visibility: hidden;
+}
+
+
+#krasnow
+{
+	width: 570px;
+	height: 154px;
+	margin: 0;
+	float: left;
+	background: url(images/krasnow_institute.gif) no-repeat;
+}
+
+#mason-logo
+{
+	width: 190px;
+	height: 154px;
+	margin: 0;
+	float: left;
+	background: url(images/mason_logo.gif) no-repeat;
+	position: relative;
+}
+
+#krasnow img,
+#mason-logo img
+{
+	visibility: hidden;
+}
+
+#skip-link
+{
+	margin: 0;
+}
+
+#skip-link a
+{
+	margin: 0;
+	position: absolute;
+	top: 10px;
+	left: 16px;
+	text-align: right;
+	width: 1px;
+	height: 1px;
+	color: #fff;
+	text-indent: 9999em;
+	overflow: hidden;
+	display: block;
+	color: #fff;
+}
+
+#skip-link a:active, #skip-link a:focus
+{
+	text-indent: 0;
+	width: auto;
+	height: auto;
+}
+
+#search-form
+{
+	margin: 0;
+	padding: 0;
+	padding: 5px 20px 0 0;
+	width: 550px;
+	height: 37px;
+	background: url(images/search_bar.gif) no-repeat;
+	position: absolute;
+	top: 154px;
+	right: 0;
+	text-align: right;
+	color: #fff;
+    font-size: 1.8em;
+}
+
+#search-form input, #search-form label, #search-form img
+{
+	vertical-align: middle;
+}
+
+#search
+{
+	border: 2px solid #2f5f74;
+	width: 215px;
+	height: 14px;
+}
+
+#menu {
+  text-align: right; /* LTR */
+  vertical-align: middle;
+  
+}
+
+
+#side-bar
+{
+	background:  url(images/curve.gif) no-repeat;
+	float: left;
+	width: 150px;
+	padding: 75px 20px 5px 20px;
+	margin-right: 20px;
+	font: bold 1.1em Tahoma, Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+#side-bar ul
+{
+	list-style: none;
+	padding: 0 0 40px 0; /* separate menus from one another vertically */
+}
+
+#side-bar ul li
+{
+	text-align: right;
+    background-image: url();
+	margin-right: 10px; /* indent sublists */
+    margin-bottom: 4px;
+}
+
+#side-bar ul a:hover
+{
+	color: #000;
+}
+
+#side-bar ul li.expanded{ 
+    list-style-type: none;
+    list-style-image: none;
+} 
+#side-bar ul li.collapsed{ 
+    list-style-type: none;
+    list-style-image: none;
+} 
+#side-bar ul li.leaf{ 
+    list-style-type: none;
+    list-style-image: none;
+} 
+
+
+
+#content
+{
+	float: left;
+	padding: 62px 0 20px 0;
+	width: 520px;
+    background: #fff;
+}
+
+#news-events
+{
+	float: left;
+	width: 550px;
+	padding: 0 0 20px 0;
+}
+
+#videos
+{
+	float: left;
+	width: 150px;
+	padding: 0 20px 20px 20px;
+	margin-right: 20px;
+}
+
+#videos p
+{
+	margin-bottom: 5px;
+}
+
+#introduction
+{
+	margin: 15px 0 5px 0;
+}
+
+#primary-news
+{
+	width: 340px;
+	float: left;
+	margin-right: 20px;
+}
+
+#secondary-news
+{
+	width: 170px;
+	float: left;
+}
+
+#secondary-news ul
+{
+	list-style: none;
+	padding: 0;
+}
+
+#secondary-news ul li
+{
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #b3cbd6;
+}
+
+#secondary-news ul li.first
+{
+	margin-top: 0;
+	padding-top: 0;
+	border-top: 0;
+}
+
+
+/* @end */
+
+/* @group Special Classes */
+
+.left-align
+{
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.right-align
+{
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+.note
+{
+	color: #900;
+}
+
+.photo
+{
+	float: left;
+	width: 160px;
+	padding-bottom: 20px;
+	margin-right: 20px;
+}
+
+.description
+{
+	padding-bottom: 20px;
+	float: left;
+	width: 370px;
+}
+
+.description h2
+{
+	font: bold 1.2em Verdana, Helvetica, Arial, sans-serif;
+	margin-bottom: 3px;
+}
+
+.clearance
+{
+	clear: both;
+}
+
+/* @end */
