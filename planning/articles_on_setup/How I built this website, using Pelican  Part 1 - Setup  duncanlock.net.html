@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/ -->
+<html lang="en" itemscope="itemscope" itemtype="http://schema.org/Article"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>How I built this website, using Pelican: Part 1 -&nbsp;Setup: duncanlock.net</title>
+<meta itemprop="image" content="http://duncanlock.net/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png">
+<link rel="shortcut icon" href="http://duncanlock.net/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://duncanlock.net/images/apple-touch-icon.png">
+<meta name="description" itemprop="description" content="I take you from zero to a complete, fully functional website, built the way a professional web developer would do it, using Pelican.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="copyright" content="Copyright (c) 1998-2014 Duncan Lock">
+<meta name="author" content="Duncan Lock">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed (full content)" href="http://duncanlock.net/feeds/all.rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom Feed (full content)" href="http://duncanlock.net/feeds/all.atom.xml">
+ 
+<!--[if lt IE 9]> <script src="http://duncanlock.net/theme/js/html5.js"></script> <![endif]-->
+ 
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" media="all" href="http://duncanlock.net/theme/css/final-3bdf26d5.css">
+<link href="./How I built this website, using Pelican  Part 1 - Setup  duncanlock.net_files/css" rel="stylesheet" type="text/css">
+<link href="./How I built this website, using Pelican  Part 1 - Setup  duncanlock.net_files/css(1)" rel="stylesheet" type="text/css">
+<meta property="twitter:account_id" content="1512952557">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://duncanlock.net/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png">
+<meta name="twitter:site" content="@duncanlock">
+<meta name="twitter:title" content="How I built this website, using Pelican: Part 1 - Setup">
+<meta name="twitter:description" content="I take you from zero to a complete, fully functional website, built the way a professional web developer would do it, using Pelican.">
+<meta name="twitter:creator" content="@duncanlock">
+<meta name="twitter:domain" content="duncanlock.net">
+<meta property="og:image" content="http://duncanlock.net/images/posts/how-i-built-this-website-using-pelican-part-1-setup/pelecanus-occidentalis-diagram.png">
+<meta property="og:site_name" content="duncanlock.net">
+<meta property="og:title" content="How I built this website, using Pelican: Part 1 - Setup">
+<meta property="og:type" content="article">
+<meta property="og:description" content="I take you from zero to a complete, fully functional website, built the way a professional web developer would do it, using Pelican.">
+<meta property="og:url" content="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/">
+<script async="" src="./How I built this website, using Pelican  Part 1 - Setup  duncanlock.net_files/analytics.js"></script><script type="text/javascript" async="" src="./How I built this website, using Pelican  Part 1 - Setup  duncanlock.net_files/embed.js"></script></head>
+<body>
+<header class="blog-header hidden-print">
+<div class="container">
+<div class="row-fluid">
+<div class="span8"><a href="http://duncanlock.net/" class="brand">duncanlock.net</a></div>
+<div class="span4" id="blog-nav">
+<ul class="nav nav-pills pull-right">
+<li>
+<a href="http://duncanlock.net/category/personal.html">personal</a>
+</li><li class="active">
+<a href="http://duncanlock.net/category/tech.html">tech</a>
+</li></ul>
+</div>
+</div> </div> </header>
+<div class="container">
+<div class="content">
+<div class="row-fluid">
+<div class="span11">
+<article class="article">
+<div class="row-fluid">
+<div class="content-title span11">
+<h1 itemprop="name headline">How I built this website, using Pelican: Part 1 -&nbsp;Setup</h1>
+</div>
+</div>
+<div class="row-fluid">
+<aside class="article-sidebar span3">
+<div class="row-fluid">
+<div class="span10">
+<p>
+<span itemprop="datePublished" class="hidden">2013-05-17T10:08:27</span>
+<span title="2013-05-17T10:08:27">Fri 17<span class="day_suffix">th</span> May, 2013</span> <br> by
+<span class="post-author vcard">
+<span class="fn" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+<span itemprop="name">Duncan Lock</span>
+</span>
+</span>
+</p>
+<p title="2048 words"><i class="muted icon-clock"></i>9 min read</p>
+<span itemprop="timeRequired" class="hidden">P9M</span>
+<span itemprop="wordCount" class="hidden">2048</span>
+<p>Category: <a href="http://duncanlock.net/category/tech.html">tech</a></p>
+</div>
+<div class="span10">
+<p class="tag_heading">Tags:</p>
+<ul class="tag-list">
+<li class="tag"><i class="icon-tags muted"></i><a href="http://duncanlock.net/tag/apache.html">apache</a></li>
+<li class="tag"><i class="icon-tags muted"></i><a href="http://duncanlock.net/tag/git.html">git</a></li>
+<li class="tag"><i class="icon-tags muted"></i><a href="http://duncanlock.net/tag/pelican.html">pelican</a></li>
+<li class="tag"><i class="icon-tags muted"></i><a href="http://duncanlock.net/tag/python.html">python</a></li>
+<li class="tag"><i class="icon-tags muted"></i><a href="http://duncanlock.net/tag/tutorial.html">tutorial</a></li>
+<li class="tag"><i class="icon-tags muted"></i><a href="http://duncanlock.net/tag/virtualenv.html">virtualenv</a></li>
+<li class="tag"><i class="icon-tags muted"></i><a href="http://duncanlock.net/tag/web.html">web</a></li>
+</ul>
+</div>
+</div> </aside>
+<section class="content span9" itemprop="text articleBody">
+<p>As I <a class="reference external" href="http://duncanlock.net/blog/2013/04/26/welcome-to-the-new-site-same-as-the-old-site/">mentioned previously</a>, this site was put together using <a class="reference external" href="http://getpelican.com/">Pelican</a> - a static site generator, written in&nbsp;Python.</p>
+<div class="figure" style="width: 497px; height: auto; max-width: 100%;">
+<img alt="Blueprint style diagram showing a brown Pelican, flying. The diagram point out it&#39;s Yellow Head, Large beak and pouch for fishing, long neck, white chest and grey body." src="./How I built this website, using Pelican  Part 1 - Setup  duncanlock.net_files/pelecanus-occidentalis-diagram.png" style="width: 497px; height: auto; max-width: 100%;">
+<p class="caption">Pelecanus Occidentalis - the Brown&nbsp;Pelican.</p>
+<div class="legend">
+Original clipart <a class="reference external" href="http://openclipart.org/detail/2798/flying-pelican-by-molumen">Flying Pelican from OpenClipart, by molumen, Public Domain</a>. More on <a class="reference external" href="http://en.wikipedia.org/wiki/Brown_Pelican">Pelican, the bird</a>.</div>
+</div>
+<p>Static site generators take your content, pour it into your templates and output the result as static pre-generated <span class="caps">HTML</span>, <span class="caps">CSS</span>, <span class="caps">JS</span> <span class="amp">&amp;</span> image files. You can then just upload the resulting folder of output to your server and you’re done. All you need on the server is a web server of some sort, like Apache or Nginx - anything really - all it’s doing is serving static&nbsp;pages.</p>
+<div class="section" id="the-huge-advantage-of-this-setup-is-simplicity">
+<h2>The huge advantage of this setup is&nbsp;simplicity:</h2>
+<ol class="arabic simple">
+<li>You can write your content in Markdown <a class="footnote-reference" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#markdown" id="id1">[1]</a>, reStructuredText <a class="footnote-reference" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#rest" id="id2">[2]</a> or AsciiDoc <a class="footnote-reference" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#asciidoc" id="id3">[3]</a> - all simple text formats, designed to facilitate writing and get out of your way. You can use whichever writing tool you prefer <a class="footnote-reference" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#subl" id="id4">[4]</a>, as long as it can output plain text&nbsp;files.</li>
+<li>Whenever you make changes, Pelican can automatically regenerate the site, so you can see your changes&nbsp;immediately.</li>
+<li>When you’re done, Pelican can automatically upload the site to your web server, or you can do it, just by uploading a&nbsp;folder.</li>
+<li>The web server generally requires no setup - all you need is a web server that can serve static content (which is all of them) - no extra software or configuration; no <span class="caps">PHP</span>, no database, no nothing - much less to go&nbsp;wrong.</li>
+<li>Because you’ve only got one thing running on the server, you have much less exposure to security problems - no WordPress, no <span class="caps">PHP</span> - just the <span class="caps">OS</span> <span class="amp">&amp;</span> the web&nbsp;server.</li>
+<li>Because the server is only serving pre-generated static content, a Pelican site is very lightweight, using very few server&nbsp;resources.</li>
+</ol>
+<p><strong><span class="caps">NB</span></strong>: This tutorial is quite long. I go into detail, explain things and try to take you from zero to a complete, fully functional website, built the way a professional web developer would do it. If you just want a really quick Pelican jump start, try here: <a class="reference external" href="http://docs.getpelican.com/en/latest/getting_started.html">http://docs.getpelican.com/en/latest/getting_started.html</a></p>
+</div>
+<div class="section" id="installation-basic-setup">
+<h2>Installation <span class="amp">&amp;</span> Basic&nbsp;Setup</h2>
+<p>I’m using Linux (Xubuntu), but doing this on Windows or Mac is quite similar - you’ll need the same things installed, but the details of installing them will be different. Installing <tt class="docutils literal"><span class="pre">python-dev</span></tt> and python packages that want to build C extensions on Windows… won’t work - I suggest you give <a class="reference external" href="http://code.activestate.com/pypm/">ActiveState’s Binary Package</a> manager a try if you’re on&nbsp;Windows.</p>
+<p>Where I use <tt class="docutils literal">duncanlock</tt> in the examples below, you should use your site name&nbsp;instead.</p>
+<div class="section" id="install">
+<h3>Install</h3>
+<p>Pelican uses Python, so you’ll need that installed. If you’re on Mac or Linux, you’ll already have this, but you’ll probably need to <a class="reference external" href="http://www.activestate.com/activepython/downloads">install it on Windows</a>. Pelican supports Python 2.7.x or 3.3+, so use whichever you prefer. I’m doing this using Python 2.7.3, but I think everything should be the same on 3.x, although I haven’t tried&nbsp;it.</p>
+<p>First, I’m going to install <tt class="docutils literal">pip</tt> <a class="footnote-reference" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#pip" id="id5">[5]</a>, <tt class="docutils literal">virtualenv</tt> <a class="footnote-reference" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#virtualenv" id="id6">[6]</a> and <tt class="docutils literal">virtualenvwrapper</tt> <a class="footnote-reference" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#virtualenvwrapper" id="id7">[7]</a>. These tools make working on python projects <em>much, much</em> easier. Later, we’re going to install some python packages that will attempt to build their C extensions during install, so we also need <tt class="docutils literal"><span class="pre">python-dev</span></tt>:</p>
+<div class="highlight"><pre><span class="gp">$</span> sudo apt-get install python-pip python-virtualenv virtualenvwrapper
+<span class="gp">$</span> sudo apt-get install python-dev
+</pre></div>
+<p>Next, I’m going to tell <tt class="docutils literal">virtualenvwrapper</tt> where I want it to put stuff, by adding this to my <tt class="docutils literal"><span class="pre">~/.bashrc</span></tt> file:</p>
+<div class="highlight"><pre><span class="c"># virtualenvwrapper config</span>
+<span class="nb">export </span><span class="nv">PROJECT_HOME</span><span class="o">=</span>~/dev
+<span class="nb">export </span><span class="nv">WORKON_HOME</span><span class="o">=</span>~/dev/virtualenvs
+</pre></div>
+<p>Now close and re-open your terminal. This will trigger a one-time setup for virtualenvwrapper. Then&nbsp;run:</p>
+<div class="highlight"><pre><span class="gp">$</span> mkproject duncanlock.net-pelican
+</pre></div>
+<p>which should do something like&nbsp;this:</p>
+<div class="highlight"><pre><span class="go">New python executable in duncanlock.net-pelican/bin/python</span>
+<span class="go">Installing distribute.........done.</span>
+<span class="go">Installing pip...............done.</span>
+<span class="go">virtualenvwrapper.user_scripts creating</span>
+<span class="go">[...]</span>
+<span class="go">Creating /home/duncan/dev/duncanlock.net-pelican</span>
+<span class="go">Setting project for duncanlock.net-pelican to /home/duncan/dev/duncanlock.net-pelican</span>
+</pre></div>
+<p>You will now have a self-contained python virtual environment installed in <tt class="docutils literal"><span class="pre">~/dev/virtualenvs/duncanlock.net-pelican</span></tt> and a new folder in <tt class="docutils literal"><span class="pre">~/dev/duncanlock.net-pelican</span></tt>, to put your project files in. Your command prompt will change while this virtualenv is active - gaining a <tt class="docutils literal"><span class="pre">(duncanlock.net-pelican)</span></tt> at the beginning, so you know which virtualenv you’re&nbsp;in.</p>
+<p>Next, we’re going to install Pelican and it’s dependencies into our virtual&nbsp;environment:</p>
+<div class="highlight"><pre><span class="gp">$</span> pip install pelican
+</pre></div>
+<p>This should install the following things for&nbsp;you:</p>
+<dl class="docutils">
+<dt>feedgenerator</dt>
+<dd>to generate the Atom&nbsp;feeds</dd>
+<dt>jinja2</dt>
+<dd>for templating&nbsp;support</dd>
+<dt>pygments</dt>
+<dd>for syntax&nbsp;highlighting</dd>
+<dt>docutils</dt>
+<dd>for supporting reStructuredText as an input&nbsp;format</dd>
+<dt>pytz</dt>
+<dd>for timezone&nbsp;definitions</dd>
+<dt>blinker</dt>
+<dd>an object-to-object and broadcast signaling&nbsp;system</dd>
+<dt>unidecode</dt>
+<dd>for <span class="caps">ASCII</span> transliterations of Unicode&nbsp;text</dd>
+</dl>
+<p>It should print out a load of progress stuff and eventually finish by&nbsp;saying:</p>
+<div class="highlight"><pre><span class="go">Successfully installed pelican feedgenerator jinja2 pygments docutils pytz blinker unidecode six</span>
+<span class="go">Cleaning up...</span>
+</pre></div>
+<p>Double check it worked by running <tt class="docutils literal">pelican <span class="pre">--version</span></tt> - currently this should print out <tt class="docutils literal">3.2.0</tt> - then run <tt class="docutils literal">pip freeze</tt> - which prints out a list of the python modules installed in your current&nbsp;virtualenv.</p>
+<p>Now we’ll install some extra python modules to support bonus functionality provided by some Pelican plugins that we’ll be using&nbsp;later:</p>
+<div class="highlight"><pre><span class="gp">$</span> pip install Pillow beautifulsoup4 cssmin cssprefixer cssutils pretty six smartypants typogrify webassets
+</pre></div>
+<p>Again, as far as I know <span class="caps">PIL</span>/Pillow is hard to install on Windows - use the ActiveState Package Manager. Once this is done, run this to get <tt class="docutils literal">pip</tt> to make a list of all the things you’ve got installed in this&nbsp;virtualenv:</p>
+<div class="highlight"><pre><span class="gp">$</span> pip freeze &gt; requirements.txt
+</pre></div>
+<p>Which should create a text file containing something like&nbsp;this:</p>
+<div class="highlight"><pre><span class="n">Jinja2</span><span class="o">==</span><span class="mf">2.6</span>
+<span class="n">Pygments</span><span class="o">==</span><span class="mf">1.6</span>
+<span class="n">Unidecode</span><span class="o">==</span><span class="mf">0.04</span><span class="o">.</span><span class="mi">12</span>
+<span class="n">argparse</span><span class="o">==</span><span class="mf">1.2</span><span class="o">.</span><span class="mi">1</span>
+<span class="n">blinker</span><span class="o">==</span><span class="mf">1.2</span>
+<span class="n">docutils</span><span class="o">==</span><span class="mf">0.10</span>
+<span class="n">feedgenerator</span><span class="o">==</span><span class="mf">1.5</span>
+<span class="n">pelican</span><span class="o">==</span><span class="mf">3.2</span>
+<span class="n">pytz</span><span class="o">==</span><span class="mi">2013</span><span class="n">b</span>
+<span class="n">six</span><span class="o">==</span><span class="mf">1.3</span><span class="o">.</span><span class="mi">0</span>
+<span class="n">wsgiref</span><span class="o">==</span><span class="mf">0.1</span><span class="o">.</span><span class="mi">2</span>
+</pre></div>
+<p>This allows you to re-install everything in one go if you move machines, just by running <tt class="docutils literal">pip install <span class="pre">-r</span> requirements.txt</tt> — or to check for <span class="amp">&amp;</span> install updates to all the modules at once, just by running <tt class="docutils literal">pip install <span class="pre">--upgrade</span> <span class="pre">-r</span> requirements.txt</tt>, amongst other things. We’re also going to check this lot into <tt class="docutils literal">git</tt> later and this allows you to keep the list of requirements under version control too, which is&nbsp;nice.</p>
+</div>
+<div class="section" id="pelican-quick-start">
+<h3>Pelican Quick&nbsp;Start</h3>
+<p>Now that we’ve got everything installed, run this to create a basic skeleton site for you to&nbsp;modify:</p>
+<div class="highlight"><pre><span class="gp">$</span> pelican-quickstart
+</pre></div>
+<p>This will ask you some questions and generate a skeleton site, that matches your&nbsp;answers:</p>
+<div class="highlight"><pre><span class="go">Welcome to pelican-quickstart v3.2.0.</span>
+
+<span class="go">This script will help you create a new Pelican-based website.</span>
+
+<span class="go">Please answer the following questions so this script can generate the files needed by Pelican.</span>
+
+<span class="go">Using project associated with current virtual environment. Will save to:</span>
+<span class="go">/home/duncan/dev/duncanlock.net-pelican</span>
+</pre></div>
+<p>you can accept the defaults by pressing enter for most of these questions, except&nbsp;these:</p>
+<div class="highlight"><pre><span class="gp">&gt;</span> What will be the title of this web site?
+<span class="go">duncanlock.net</span>
+<span class="gp">&gt;</span> Who will be the author of this web site?
+<span class="go">Duncan Lock</span>
+</pre></div>
+<p>If you wanted to use the built-in Pelican webserver for development, you could say ‘No’ and skip this next bit, but we’re going to configure a local virtualhost and use Apache to serve the site for development, so we’re going to do this&nbsp;instead:</p>
+<div class="highlight"><pre><span class="gp">&gt;</span> Do you want to specify a <span class="caps">URL</span> prefix? e.g., http://example.com <span class="o">(</span>Y/n<span class="o">)</span> y
+<span class="gp">&gt;</span> What is your <span class="caps">URL</span> prefix? <span class="o">(</span>see above example; no trailing slash<span class="o">)</span> http://duncanlock.test
+<span class="go">[...]</span>
+<span class="go">Done. Your new project is available at /home/duncan/dev/duncanlock.net-pelican</span>
+</pre></div>
+<p>Now you can generate the quick-start site and see what it looks&nbsp;like:</p>
+<div class="highlight"><pre><span class="gp">$</span> make html
+</pre></div>
+<p>This should create an <tt class="docutils literal">output</tt> folder with the contents of a website in it. To quickly serve the generated site so it can be previewed in your browser, run&nbsp;this:</p>
+<div class="highlight"><pre><span class="gp">$</span> make serve
+</pre></div>
+<p>Then visit <a class="reference external" href="http://localhost:8000/">http://localhost:8000</a> in your browser; you should be able to see a test site, which should look something like&nbsp;this:</p>
+<img alt="Screenshot of the quick-started Pelican site, using the default theme and no content." src="./How I built this website, using Pelican  Part 1 - Setup  duncanlock.net_files/duncanlock-net-pelican-test.png" style="width: 816px; height: auto; max-width: 100%;">
+<p>Press <tt class="docutils literal">Ctrl + c</tt> in the console to stop the Pelican&nbsp;server.</p>
+</div>
+<div class="section" id="apache-setup">
+<h3>Apache&nbsp;Setup</h3>
+<p>Okay, now we want to configure an Apache VirtualHost <a class="footnote-reference" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#virtualhost" id="id8">[8]</a>, so that when we visit <a class="reference external" href="http://duncanlock.test/">http://duncanlock.test/</a> in a browser, our local Apache server will serve up our local pelican development site. There are lots of reasons why this is useful, but the main one is that it’s very close to my final deployment environment - a Linux box with Apache on it. It also means that the root of the local site is <tt class="docutils literal">/</tt>, the same as the root of the final live site, which is nice for making links work. This also allows us to do neat server configuration things and test them all locally, as we’ll see&nbsp;later.</p>
+<p>If you haven’t already got Apache installed, install&nbsp;it:</p>
+<div class="highlight"><pre><span class="gp">$</span> sudo apt-get install apache2
+</pre></div>
+<p>Once that’s finished, save the following as a text file called <tt class="docutils literal">duncanlock.test</tt> in <tt class="docutils literal"><span class="pre">/etc/apache2/sites-available/</span></tt>:</p>
+<div class="highlight"><pre><span class="c"># domain: duncanlock.test</span>
+<span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
+    <span class="c"># Admin email, Server Name (domain name) and any aliases</span>
+    <span class="nb">ServerAdmin</span> webmaster@duncanlock.test
+    <span class="nb">ServerName</span>  duncanlock.test
+    <span class="nb">ServerAlias</span> www.duncanlock.test
+
+    <span class="c"># Index file and Document Root (where the public files are located)</span>
+    <span class="nb">DirectoryIndex</span> index.php index.html
+    <span class="nb">DocumentRoot</span> <span class="sx">/home/duncan/dev/duncanlock.net-pelican/output/</span>
+<span class="nt">&lt;/VirtualHost&gt;</span>
+</pre></div>
+<p>The really crucial bit of this is the <tt class="docutils literal">DocumentRoot</tt> - make sure this points to the <tt class="docutils literal">/output/</tt> folder of the Pelican site we just created - and use an absolute&nbsp;path.</p>
+<p>Then add a mapping for the duncanlock.test domain to your <tt class="docutils literal">/etc/hosts</tt> file, by adding this line&nbsp;somewhere:</p>
+<div class="highlight"><pre>127.0.0.1  duncanlock.test
+</pre></div>
+<p>Then enable our new virtual host in&nbsp;Apache:</p>
+<div class="highlight"><pre><span class="gp">$</span> sudo a2ensite duncanlock.test
+<span class="gp">$</span> sudo service apache2 reload
+</pre></div>
+<p>Now visiting <a class="reference external" href="http://duncanlock.test/">http://duncanlock.test/</a> in a browser should show your local Pelican development&nbsp;site.</p>
+</div>
+</div>
+<div class="section" id="git">
+<h2>Git</h2>
+<p>It’s about time we started keeping some history of what we’re doing, so we will add our work so far to <tt class="docutils literal">git</tt> <a class="footnote-reference" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#id10" id="id9">[9]</a> - a version control system that will keep a history of all our changes, allow easy backups and restore, moving between machines, rolling back changes - and <em>much</em>&nbsp;more.</p>
+<p>First, create a text file called <tt class="docutils literal">.gitignore</tt> in your website’s root folder, containing&nbsp;this:</p>
+<div class="highlight"><pre>output/*
+*.py[cod]
+</pre></div>
+<p>This tells git to ignore everything in the output folder, and any compiled python files - we don’t need to version or backup that&nbsp;stuff.</p>
+<p>Next, turn the current folder into a git repository and add our site so&nbsp;far:</p>
+<div class="highlight"><pre><span class="gp">$</span> git init
+
+<span class="go">Initialized empty Git repository in /home/duncan/dev/duncanlock.net-pelican/.git/</span>
+
+<span class="gp">$</span> git add .
+<span class="gp">$</span> git status
+
+<span class="gp">#</span> On branch master
+<span class="gp">#</span>
+<span class="gp">#</span> Initial commit
+<span class="gp">#</span>
+<span class="gp">#</span> Changes to be committed:
+<span class="gp">#</span>   <span class="o">(</span>use <span class="s2">"git rm --cached &lt;file&gt;..."</span> to unstage<span class="o">)</span>
+<span class="gp">#</span>
+<span class="gp">#</span>   new file:   .gitignore
+<span class="gp">#</span>   new file:   Makefile
+<span class="gp">#</span>   new file:   develop_server.sh
+<span class="gp">#</span>   new file:   pelicanconf.py
+<span class="gp">#</span>   new file:   publishconf.py
+<span class="gp">#</span>   new file:   requirements.txt
+<span class="gp">#</span>
+
+<span class="gp">$</span> git commit -m<span class="s2">"Inital commit of duncanlock.net; quick start site with no changes, so far"</span>
+<span class="gp">$</span> git status
+
+<span class="gp">#</span> On branch master
+<span class="go">nothing to commit, working directory clean</span>
+</pre></div>
+<p>That’s it - the site is now in git, ready to be backed up onto <a class="reference external" href="https://github.com/">GitHub</a>, if you like. When you make changes, remember to do the following, so they’re stored and versioned in&nbsp;git:</p>
+<div class="highlight"><pre><span class="gp">$</span> git add .
+<span class="gp">$</span> git commit -m<span class="s2">"Description of the changes I made."</span>
+</pre></div>
+<p><span class="caps">OK</span>, that’s it for part one - you should now have a working Pelican site, in a python virtual environment, being served by Apache via a VirtualHost on your local&nbsp;machine.</p>
+</div>
+<div class="section" id="coming-up-in-part-2">
+<h2>Coming up in Part&nbsp;2:</h2>
+<ul class="simple">
+<li>Content creation&nbsp;work-flow</li>
+<li>Creating <span class="amp">&amp;</span> customizing your&nbsp;theme</li>
+<li>Custom Jinja&nbsp;filters</li>
+<li>Configuring your Pelican site<ul>
+<li>Date based post URLs: <tt class="docutils literal"><span class="pre">/blog/2013/05/03/post-title-goes-here/</span></tt></li>
+<li>Plugins</li>
+<li>Extra files to copy&nbsp;over</li>
+<li>Twitter&nbsp;Cards</li>
+<li>Favicons, sitemaps, Google&nbsp;Analytics,</li>
+<li>etc…</li>
+</ul>
+</li>
+<li>Performance: Web assets - minifying <span class="amp">&amp;</span> compressing things, professional Apache .htaccess&nbsp;setup</li>
+<li>Deploying your site to your&nbsp;server</li>
+</ul>
+<p>Once I’ve finished part 2, I’ll link it here. If you’ve got any questions, please ask in the&nbsp;comments.</p>
+<hr class="docutils">
+<div class="section" id="footnotes-references">
+<h3>Footnotes <span class="amp">&amp;</span>&nbsp;References:</h3>
+<table class="docutils footnote" frame="void" id="markdown" rules="none">
+<colgroup><col class="label"><col></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#id1">[1]</a></td><td><strong>Markdown</strong> is a text-to-<span class="caps">HTML</span> conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid <span class="caps">XHTML</span> (or <span class="caps">HTML</span>): <a class="reference external" href="http://daringfireball.net/projects/markdown/">http://daringfireball.net/projects/markdown/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="rest" rules="none">
+<colgroup><col class="label"><col></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#id2">[2]</a></td><td><strong>reStructuredText</strong> is an easy-to-read, what-you-see-is-what-you-get plain text mark-up syntax and parser system. It is useful for in-line program documentation (such as Python docstrings), for quickly creating simple web pages, and for standalone documents: <a class="reference external" href="http://en.wikipedia.org/wiki/ReStructuredText">http://en.wikipedia.org/wiki/ReStructuredText</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="asciidoc" rules="none">
+<colgroup><col class="label"><col></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#id3">[3]</a></td><td><strong>AsciiDoc</strong> is a text document format for writing notes, documentation, articles, books, ebooks, slideshows, web pages, man pages and blogs. AsciiDoc files can be translated to many formats including <span class="caps">HTML</span>, <span class="caps">PDF</span>, <span class="caps">EPUB</span>, man page: <a class="reference external" href="http://www.methods.co.nz/asciidoc/">http://www.methods.co.nz/asciidoc/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="subl" rules="none">
+<colgroup><col class="label"><col></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#id4">[4]</a></td><td><strong>SublimeText</strong> is currently my <a class="reference external" href="http://www.sublimetext.com/">favourite text editor</a> - it’s really pretty great, you should try it.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="pip" rules="none">
+<colgroup><col class="label"><col></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#id5">[5]</a></td><td><strong>Pip</strong> is a package management system used to install and manage software packages written in the programming language Python. Many packages can be found in the Python Package Index (PyPI): <a class="reference external" href="http://en.wikipedia.org/wiki/Pip_(Python">http://en.wikipedia.org/wiki/Pip_(Python</a>)</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="virtualenv" rules="none">
+<colgroup><col class="label"><col></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#id6">[6]</a></td><td><strong>virtualenv</strong> is a tool to create isolated Python environments: <a class="reference external" href="http://www.virtualenv.org/en/latest/">http://www.virtualenv.org/en/latest/</a> <span class="amp">&amp;</span> <a class="reference external" href="http://www.clemesha.org/blog/modern-python-hacker-tools-virtualenv-fabric-pip/">http://www.clemesha.org/blog/modern-python-hacker-tools-virtualenv-fabric-pip/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="virtualenvwrapper" rules="none">
+<colgroup><col class="label"><col></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#id7">[7]</a></td><td><strong>virtualenvwrapper</strong> is a set of extensions to Ian Bicking’s <tt class="docutils literal">virtualenv</tt> tool. Includes wrappers for creating <span class="amp">&amp;</span> deleting virtual environments and managing development workflow, making it easier to work on more than one project at a time without introducing conflicts in their dependencies. <a class="reference external" href="http://virtualenvwrapper.readthedocs.org/en/latest/">http://virtualenvwrapper.readthedocs.org/en/latest/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="virtualhost" rules="none">
+<colgroup><col class="label"><col></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#id8">[8]</a></td><td>The Apache Webserver can serve lots of different websites from the same server instance, on the same <span class="caps">IP</span> address. Virtual Hosts are the way it does this. You just give each one a name, a folder and a mapping in your /etc/hosts files and reload Apache.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id10" rules="none">
+<colgroup><col class="label"><col></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/#id9">[9]</a></td><td><strong>Git</strong> is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency: <a class="reference external" href="http://git-scm.com/">http://git-scm.com/</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr>
+<div class="row-fluid">
+<div class="realted_posts span11">
+<h3>Related Posts</h3>
+<nav>
+<dl>
+<dt><h4><a href="http://duncanlock.net/blog/2013/05/29/better-figures-images-plugin-for-pelican/">Better Figures <span class="amp">&amp;</span> Images Plugin for&nbsp;Pelican</a></h4></dt>
+<dd><span class="smallprint muted">How to get perfect and responsive images and figures with Pelican - using the Better Images &amp; Figures Plugin.</span></dd>
+<dt><h4><a href="http://duncanlock.net/blog/2013/06/23/post-statistics-plugin-for-pelican/">Post Statistics Plugin for&nbsp;Pelican</a></h4></dt>
+<dd><span class="smallprint muted">A Pelican plugin to calculate various statistics about a post and store them in an article.stats dictionary. Includes time to read, word count, word frequency and Flesch-kincaid stats.</span></dd>
+<dt><h4><a href="http://duncanlock.net/blog/2013/10/18/how-i-upgraded-this-website-to-pelican-33/">How I upgraded this website to Pelican&nbsp;3.3</a></h4></dt>
+<dd><span class="smallprint muted">A few of the changes in Pelican 3.3 might mean making some changes to your site in order to upgrade. Here's how I upgraded my site from Pelican 3.2 to 3.3.</span></dd>
+<dt><h4><a href="http://duncanlock.net/blog/2013/10/19/the-better-figures-images-pelican-plugin-now-supports-figure-numbering/">The Better Figures <span class="amp">&amp;</span> Images Pelican plugin now supports Figure&nbsp;Numbering</a></h4></dt>
+<dd><span class="smallprint muted">My Better Figures &amp; Images Pelican plugin now supports automatic Figure Numbering - Yay! Here's how it works.</span></dd>
+</dl>
+</nav>
+</div>
+</div>
+<hr>
+<div class="row-fluid">
+<h3 id="article-comments-section">Comments</h3>
+<div id="disqus_thread"><iframe id="dsq-2" data-disqus-uid="2" allowtransparency="true" frameborder="0" tabindex="0" title="Disqus" width="100%" src="./How I built this website, using Pelican  Part 1 - Setup  duncanlock.net_files/saved_resource.html" scrolling="no" horizontalscrolling="no" verticalscrolling="no" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 5094px !important;"></iframe></div>
+<script type="text/javascript">
+    var disqus_shortname = 'duncanlocknet'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;</noscript>
+</div>
+</section>
+</div>
+</article>
+</div>
+</div> </div> </div>
+ 
+<footer class="blog-footer hidden-print">
+<div class="container">
+<div class="row-fluid">
+<div class="site-nav span2">
+<h4 class="nav-header">Site</h4>
+<ul class="nav nav-list" id="site-links">
+<li><a href="http://duncanlock.net/"><i class="icon-home"></i>Home</a></li>
+<li><a href="http://duncanlock.net/blog/"><i class="icon-list"></i>Archives</a></li>
+<li><a href="http://duncanlock.net/tags.html"><i class="icon-tags"></i>Tags</a></li>
+<li class="feeds">
+<i class="icon-rss"></i>
+<a href="http://duncanlock.net/feeds/all.rss.xml" rel="alternate">RSS</a><a href="http://duncanlock.net/feeds/all.atom.xml" rel="alternate">Atom</a> </li>
+</ul>
+</div>
+<div class="social span2" id="socialist">
+<h4 class="nav-header">Social</h4>
+<ul class="nav nav-list">
+<li><a href="http://twitter.com/duncanlock" rel="author"><i class="icon-twitter"></i>Twitter</a></li>
+<li><a href="http://github.com/dflock" rel="author"><i class="icon-github-circled"></i>GitHub</a></li>
+<li><a href="http://stackoverflow.com/users/259698/duncan-lock" rel="author"><i class="icon-stackoverflow"></i>Stack​Overflow</a></li>
+<li><a href="http://google.com/+DuncanLock" rel="author"><i class="icon-gplus-squared"></i>Google+</a></li>
+</ul>
+</div>
+<div class="links span2">
+<h4 class="nav-header">Links</h4>
+<ul class="nav nav-list">
+<li><a href="http://duncanlock.net/pages/duncan-locks-resume.html" rel="author"><i class="icon-user"></i>CV/Resume</a></li>
+<li><a href="http://ca.linkedin.com/in/duncanlock/" rel="author"><i class="icon-linkedin-squared"></i>LinkedIn</a></li>
+<li><a href="http://careers.stackoverflow.com/duncanlock" rel="author"><i class="icon-stackoverflow"></i>SO Careers</a></li>
+<li><a href="http://codeistry.com/" rel="author"><i class="icon-globe"></i>Codeistry</a></li>
+</ul>
+</div>
+<div class="colophon span5" id="colophon">
+<h4 class="nav-header">About</h4>
+<p><a href="http://duncanlock.net/pages/duncan-locks-resume.html">An adaptable and enthusiastic developer with broad experience and an artistic back­ground. Strong graph­ical com­munication, design, creative <span class="amp">&amp;</span> prob­lem solving skills — and an eye for detail.</a></p>
+</div>
+</div>  
+<hr>
+<p>
+<small>
+Designed, built, drawn, written <span class="amp">&amp;</span> © 1998-2014 <a href="http://duncanlock.net/">Duncan Lock</a><br>
+Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+<a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a>.
+Icons via <a href="http://fontello.com/">Fontello</a>.
+</small>
+</p>
+</div>  
+</footer>  
+ 
+<script src="./How I built this website, using Pelican  Part 1 - Setup  duncanlock.net_files/jquery.min.js"></script>
+<script src="./How I built this website, using Pelican  Part 1 - Setup  duncanlock.net_files/bootstrap.min.js"></script>
+<script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-1493291-9', 'duncanlock.net');
+          ga('send', 'pageview');
+        </script>
+
+</body></html>

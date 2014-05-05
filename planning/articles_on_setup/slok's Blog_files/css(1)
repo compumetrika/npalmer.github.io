@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'The Girl Next Door';
+  font-style: normal;
+  font-weight: 400;
+  src: local('The Girl Next Door'), local('TheGirlNextDoor'), url(http://themes.googleusercontent.com/static/fonts/thegirlnextdoor/v5/cWRA4JVGeEcHGcPl5hmX7rOFxJ5Ig03puUh67ume3us.woff) format('woff');
+}

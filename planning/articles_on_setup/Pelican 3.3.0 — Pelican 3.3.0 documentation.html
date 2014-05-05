@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0036)http://docs.getpelican.com/en/3.3.0/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <title>Pelican 3.3.0 — Pelican 3.3.0 documentation</title>
+    
+    <link rel="stylesheet" href="./Pelican 3.3.0 — Pelican 3.3.0 documentation_files/pelican.css" type="text/css">
+    <link rel="stylesheet" href="./Pelican 3.3.0 — Pelican 3.3.0 documentation_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./Pelican 3.3.0 — Pelican 3.3.0 documentation_files/badge_only.css" type="text/css">
+    <link rel="stylesheet" href="./Pelican 3.3.0 — Pelican 3.3.0 documentation_files/readthedocs-doc-embed.css" type="text/css">
+    
+    <script type="text/javascript" async="" src="./Pelican 3.3.0 — Pelican 3.3.0 documentation_files/ga.js"></script><script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '3.3.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="./Pelican 3.3.0 — Pelican 3.3.0 documentation_files/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="./Pelican 3.3.0 — Pelican 3.3.0 documentation_files/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./Pelican 3.3.0 — Pelican 3.3.0 documentation_files/underscore.js"></script>
+    <script type="text/javascript" src="./Pelican 3.3.0 — Pelican 3.3.0 documentation_files/doctools.js"></script>
+    <script type="text/javascript" src="./Pelican 3.3.0 — Pelican 3.3.0 documentation_files/readthedocs-doc-embed.js"></script>
+    <link rel="top" title="Pelican 3.3.0 documentation" href="http://docs.getpelican.com/en/3.3.0/#">
+    <link rel="next" title="Getting started" href="http://docs.getpelican.com/en/3.3.0/getting_started.html">
+ 
+<!-- RTD Extra Head -->
+<script type="text/javascript">
+  // This is included here because other places don't have access to the pagename variable.
+  var READTHEDOCS_DATA = {
+    project: "pelican",
+    version: "3.3.0",
+    page: "index",
+    theme: "pelican",
+    docroot: "/docs/"
+  }
+  // Old variables
+  var doc_version = "3.3.0";
+  var doc_slug = "pelican";
+  var page_name = "index";
+  var html_theme = "pelican";
+</script>
+<!-- RTD Analytics Code -->
+<!-- Included in the header because you don't have a footer block. -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17997319-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- end RTD Analytics Code -->
+
+
+<!-- end RTD <extrahead> -->
+
+  </head>
+  <body>
+  
+  
+  <div class="indexwrapper">
+  
+
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <div class="section" id="pelican-release">
+<h1>Pelican 3.3.0<a class="headerlink" href="http://docs.getpelican.com/en/3.3.0/#pelican-release" title="Permalink to this headline">¶</a></h1>
+<p>Pelican is a static site generator, written in <a class="reference external" href="http://www.python.org/">Python</a>.</p>
+<ul class="simple">
+<li>Write your content directly with your editor of choice (vim!)
+in <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>, <a class="reference external" href="http://daringfireball.net/projects/markdown/">Markdown</a>, or <a class="reference external" href="http://www.methods.co.nz/asciidoc/index.html">AsciiDoc</a> formats</li>
+<li>Includes a simple CLI tool to (re)generate your site</li>
+<li>Easy to interface with distributed version control systems and web hooks</li>
+<li>Completely static output is easy to host anywhere</li>
+</ul>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="http://docs.getpelican.com/en/3.3.0/#features" title="Permalink to this headline">¶</a></h2>
+<p>Pelican 3 currently supports:</p>
+<ul class="simple">
+<li>Articles (e.g., blog posts) and pages (e.g., “About”, “Projects”, “Contact”)</li>
+<li>Comments, via an external service (Disqus). (Please note that while
+useful, Disqus is an external service, and thus the comment data will be
+somewhat outside of your control and potentially subject to data loss.)</li>
+<li>Theming support (themes are created using <a class="reference external" href="http://jinja.pocoo.org/">Jinja2</a> templates)</li>
+<li>Publication of articles in multiple languages</li>
+<li>Atom/RSS feeds</li>
+<li>Code syntax highlighting</li>
+<li>Import from WordPress, Dotclear, or RSS feeds</li>
+<li>Integration with external tools: Twitter, Google Analytics, etc. (optional)</li>
+</ul>
+</div>
+<div class="section" id="why-the-name-pelican">
+<h2>Why the name “Pelican”?<a class="headerlink" href="http://docs.getpelican.com/en/3.3.0/#why-the-name-pelican" title="Permalink to this headline">¶</a></h2>
+<p>“Pelican” is an anagram for <em>calepin</em>, which means “notebook” in French. ;)</p>
+</div>
+<div class="section" id="source-code">
+<h2>Source code<a class="headerlink" href="http://docs.getpelican.com/en/3.3.0/#source-code" title="Permalink to this headline">¶</a></h2>
+<p>You can access the source code at: <a class="reference external" href="https://github.com/getpelican/pelican">https://github.com/getpelican/pelican</a></p>
+</div>
+<div class="section" id="feedback-contact-us">
+<h2>Feedback / Contact us<a class="headerlink" href="http://docs.getpelican.com/en/3.3.0/#feedback-contact-us" title="Permalink to this headline">¶</a></h2>
+<p>If you want to see new features in Pelican, don’t hesitate to offer suggestions,
+clone the repository, etc. There are many ways to <a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/contribute.html"><em>contribute</em></a>.
+That’s open source, dude!</p>
+<p>Send a message to “authors at getpelican dot com” with any requests/feedback.
+For a more immediate response, you can also join the team via IRC at
+<a class="reference external" href="irc://irc.freenode.net/pelican">#pelican on Freenode</a> — if you don’t have an IRC client handy, use the
+<a class="reference external" href="http://webchat.freenode.net/?channels=pelican&uio=d4">webchat</a> for quick feedback. If you ask a question via IRC and don’t get an
+immediate response, don’t leave the channel! It may take a few hours because
+of time zone differences, but f you are patient and remain in the channel,
+someone will almost always respond to your inquiry.</p>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="http://docs.getpelican.com/en/3.3.0/#documentation" title="Permalink to this headline">¶</a></h2>
+<p>A French version of the documentation is available at <a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/fr/index.html"><em>Pelican</em></a>.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/getting_started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/getting_started.html#installing-pelican">Installing Pelican</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/getting_started.html#kickstart-your-site">Kickstart your site</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/getting_started.html#automation-tools">Automation tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/getting_started.html#writing-content-using-pelican">Writing content using Pelican</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/settings.html">Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/settings.html#basic-settings">Basic settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/settings.html#template-pages">Template pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/settings.html#path-metadata">Path metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/settings.html#feed-settings">Feed settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/settings.html#pagination">Pagination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/settings.html#tag-cloud">Tag cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/settings.html#translations">Translations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/settings.html#ordering-content">Ordering content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/settings.html#themes">Themes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/settings.html#example-settings">Example settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/themes.html">How to create themes for Pelican</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/themes.html#structure">Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/themes.html#templates-and-variables">Templates and variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/themes.html#feeds">Feeds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/themes.html#inheritance">Inheritance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/plugins.html">Plugins</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/plugins.html#how-to-use-plugins">How to use plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/plugins.html#where-to-find-plugins">Where to find plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/plugins.html#how-to-create-plugins">How to create plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/plugins.html#list-of-signals">List of signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/plugins.html#recipes">Recipes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/internals.html">Pelican internals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/internals.html#overall-structure">Overall structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/internals.html#how-to-implement-a-new-reader">How to implement a new reader?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/internals.html#how-to-implement-a-new-generator">How to implement a new generator?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/pelican-themes.html">pelican-themes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/pelican-themes.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/pelican-themes.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/pelican-themes.html#see-also">See also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/importer.html">Import from other blog software</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/importer.html#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/importer.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/importer.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/importer.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/importer.html#tests">Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html">Frequently Asked Questions (FAQ)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#what-s-the-best-way-to-communicate-a-problem-question-or-suggestion">What’s the best way to communicate a problem, question, or suggestion?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#how-can-i-help">How can I help?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#is-it-mandatory-to-have-a-configuration-file">Is it mandatory to have a configuration file?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#i-m-creating-my-own-theme-how-do-i-use-pygments-for-syntax-highlighting">I’m creating my own theme. How do I use Pygments for syntax highlighting?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#how-do-i-create-my-own-theme">How do I create my own theme?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#i-want-to-use-markdown-but-i-got-an-error">I want to use Markdown, but I got an error.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#can-i-use-arbitrary-metadata-in-my-templates">Can I use arbitrary metadata in my templates?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#how-do-i-assign-custom-templates-on-a-per-page-basis">How do I assign custom templates on a per-page basis?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#how-can-i-override-the-generated-url-of-a-specific-page-or-article">How can I override the generated URL of a specific page or article?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#how-can-i-use-a-static-page-as-my-home-page">How can I use a static page as my home page?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#what-if-i-want-to-disable-feed-generation">What if I want to disable feed generation?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#i-m-getting-a-warning-about-feeds-generated-without-siteurl-being-set-properly">I’m getting a warning about feeds generated without SITEURL being set properly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#my-feeds-are-broken-since-i-upgraded-to-pelican-3-x">My feeds are broken since I upgraded to Pelican 3.x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/faq.html#is-pelican-only-suitable-for-blogs">Is Pelican only suitable for blogs?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/tips.html">Tips</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/tips.html#publishing-to-github">Publishing to GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/tips.html#how-to-add-youtube-or-vimeo-videos">How to add YouTube or Vimeo Videos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/contribute.html">How to contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/contribute.html#contribution-submission-guidelines">Contribution submission guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/contribute.html#setting-up-the-development-environment">Setting up the development environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/contribute.html#coding-standards">Coding standards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/contribute.html#building-the-docs">Building the docs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/contribute.html#running-the-test-suite">Running the test suite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/contribute.html#python-3-development-tips">Python 3 development tips</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/report.html">Some history about Pelican</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/report.html#use-case">Use case</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/report.html#design-process">Design process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/report.html#in-more-detail">In more detail</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html">Release history</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id1">3.3.0 (2013-09-24)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#and-3-2-2">3.2.1 and 3.2.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id2">3.2 (2013-04-24)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id3">3.1 (2012-12-04)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id4">3.0 (2012-08-08)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id5">2.8 (2012-02-28)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id6">2.7 (2011-06-11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id7">2.6 (2011-03-08)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id8">2.5 (2010-11-20)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id9">2.4 (2010-11-06)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id10">2.3 (2010-10-31)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id11">2.2 (2010-10-30)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id12">2.1 (2010-10-30)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id13">2.0 (2010-10-30)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id14">1.2 (2010-09-28)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http://docs.getpelican.com/en/3.3.0/changelog.html#id15">1.1 (2010-08-19)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  
+    <a href="http://github.com/getpelican/pelican"><img style="position: fixed; top: 0; right: 0; border: 0;" src="./Pelican 3.3.0 — Pelican 3.3.0 documentation_files/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+  
+
+  
+  </div>
+  
+
+  
+<!-- Inserted RTD Footer -->
+<div class="injected">
+
+  
+  <div class="rst-versions rst-badge" data-toggle="rst-versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book">&nbsp;</span>
+      v: 3.3.0
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+  
+
+      
+       
+      <dl>
+        <dt>Versions</dt>
+        
+          
+              
+              <dd><a href="http://docs.getpelican.com/en/latest/">latest</a></dd>
+              
+          
+        
+           <strong> 
+              
+              <dd><a href="./Pelican 3.3.0 — Pelican 3.3.0 documentation_files/Pelican 3.3.0 — Pelican 3.3.0 documentation.html">3.3.0</a></dd>
+              
+           </strong> 
+        
+          
+              
+              <dd><a href="http://docs.getpelican.com/en/3.2/">3.2</a></dd>
+              
+          
+        
+          
+              
+              <dd><a href="http://docs.getpelican.com/en/3.1.1/">3.1.1</a></dd>
+              
+          
+        
+          
+              
+              <dd><a href="http://docs.getpelican.com/en/3.0/">3.0</a></dd>
+              
+          
+        
+          
+              
+              <dd><a href="http://docs.getpelican.com/en/2.8/">2.8</a></dd>
+              
+          
+        
+      </dl>
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+          <dd><a href="https://media.readthedocs.org/pdf/pelican/3.3.0/pelican.pdf">PDF</a></dd>
+        
+          <dd><a href="https://media.readthedocs.org/htmlzip/pelican/3.3.0/pelican.zip">HTML</a></dd>
+        
+          <dd><a href="https://media.readthedocs.org/epub/pelican/3.3.0/pelican.epub">Epub</a></dd>
+        
+      </dl>
+      
+      <dl>
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+          <dd>
+            <a href="http://readthedocs.org/projects/pelican/?fromdocs=pelican">Project Home</a>
+          </dd>
+          <dd>
+            <a href="http://readthedocs.org/builds/pelican/?fromdocs=pelican">Builds</a>
+          </dd>
+          <dd>
+            <a href="http://readthedocs.org/projects/pelican/downloads/">Downloads</a>
+          </dd>
+      </dl>
+      
+      <dl>
+        <dt>On GitHub</dt>
+          <dd>
+            <a href="https://github.com/getpelican/pelican/blob/3.3.0/docs/index.rst">Edit</a>
+          </dd>
+      </dl>
+      
+      <hr>
+      Free document hosting provided by <a href="https://readthedocs.org/">Read the Docs</a>. Support us on <a href="https://www.gittip.com/readthedocs/">Gittip</a>.
+
+  
+    </div>
+  </div>
+  
+
+</div>
+</body></html>

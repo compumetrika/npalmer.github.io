@@ -1,0 +1,331 @@
+/*
+ Theme Name:     Tanji
+ Theme URI:      http://tan-hosting.com
+ Description:    Tanji Blog Theme
+ Author:         Nicholas Tan Jerome
+ Author URI:     http://ntanjerome.org
+ Template:       tanji
+ Version:        0.1.0
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body {font-family: 'Open Sans', sans-serif; line-height: 2;}
+
+ol, ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* a href style for all */
+a {
+  color: black;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+a:link {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+  background-color: white;
+  color:            black;
+} 
+a:visited {
+  /* Applies to all visited links */
+  text-decoration:  none;
+  background-color: white;
+  color:            black;
+} 
+a:hover   {
+  /* Applies to links under the pointer */
+  text-decoration:  none;
+  background-color: white;
+  color:            #ff9900;
+}
+a:active  {
+  /* Applies to activated links */
+  text-decoration:  underline;
+  background-color: black;
+  color: #ff9900;
+}
+
+p a {
+  border-bottom:1px dotted;
+}
+
+#social_network{
+  width: 180px;
+  margin: 0 auto;
+  padding: 1.25em 0.675em 0em 0.675em;
+}
+
+#user_name, #user_desc {
+   font-family: 'Open Sans', sans-serif;
+   margin: 0 auto;
+   text-align: center;
+   font-weight: 300;
+}
+
+#name_long {
+   display: inline;
+}
+#name_short {
+   display: none;
+}
+
+
+#user_name {
+   font-size: 1.50em;
+}
+
+#user_desc {
+   font-size: 0.90em;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 28px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+#article_date{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+section {
+  margin: 20px 20px;
+  
+}
+
+.entry {
+  margin: 20px 0px;
+}
+
+#circle {
+   margin: 5px;
+   float: left;
+   background: white;
+   width: 50px;
+   height: 50px;
+   -webkit-border-radius: 25px;
+   -moz-border-radius: 25px;
+   border-radius: 25px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#circle:hover {
+  background: #ff9900;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display inline;
+}
+
+@media only screen and (min-width: 480px) {
+}
+@media only screen and (min-width: 600px) {
+}
+@media only screen and (min-width: 768px) {
+/** Tanji  @media only screen and (min-width: 992px) { **/
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+header, #main_layout, footer, article {
+   width: 100%;
+   margin: 0 auto;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+header {
+   padding:10px;
+   margin: 0 auto;
+}
+
+#main_layout {
+   margin: 0 auto;
+}
+
+#user_tag {
+   float: left;
+   position: fixed;
+   width: 18%;
+   padding: 1.25em 0.675em 0em 0.675em;
+}
+
+#main_content {
+   margin: 0 0 0 23%; /* 23% width of user_tag */
+   width: 68%;
+   display: -ms-flexbox;
+   -ms-box-orient: horizontal;
+
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: flex;
+   
+   -webkit-flex-flow: row wrap;
+   -moz-flex-flow: row wrap;
+   -ms-flex-flow: row wrap;
+   flex-flow: row wrap;
+
+   -webkit-flex-direction: column;
+   -moz-flex-direction: column;
+   -ms-flex-direction: column;
+   flex-direction: column;
+
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+footer {
+   position:absolute;
+   bottom:0;
+   height:60px;   /* Height of the footer */
+}
+
+article {
+   margin: 0 auto;
+}
+
+section > div {
+   -prefix-box-flex: 1; /* old spec webkit, moz */
+   flex: 1;
+}
+
+#user_tag {
+   margin-left: 10px;
+}
+
+#user_name, #user_desc {
+   font-family: 'Roboto Slab', serif;
+   padding: 1.250em 0em 1.925em 0em;
+   margin: 0 auto;
+   text-align: center;
+}
+
+#name_long {
+   display: none;
+}
+
+#name_short {
+   display: inline;
+}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+#name_long {
+   display: inline;
+}
+#name_short {
+   display: none;
+}
+
+}
+
+@media only screen and (min-width: 1382px) {
+
+header, #main_layout, footer, article {
+   width: 80%;
+   margin: 0 auto;
+}
+
+}

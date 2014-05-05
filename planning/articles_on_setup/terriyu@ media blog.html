@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://terriyu.info/blog/posts/2013/07/pelican-setup/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>terriyu@/media/blog</title>
+	<meta name="description" content="">
+	<meta name="author" content="Terri Yu">
+
+                    
+    <script src="./terriyu@ media blog_files/ga.js"></script><script src="./terriyu@ media blog_files/MathJax.js" type="text/javascript">
+       MathJax.Hub.Config({
+           config: ["MMLorHTML.js"],
+           jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+           TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"], equationNumbers: { autoNumber: "AMS" } },
+           extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+           tex2jax: { 
+               inlineMath: [ ['$','$'] ],
+               displayMath: [ ['$$','$$'] ],
+               processEscapes: true },
+           "HTML-CSS": {
+               styles: { ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+           }
+       });
+    </script>
+
+                
+	<!-- HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="http://terriyu.info/blog/theme/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link href="http://terriyu.info/blog/theme/bootstrap.min.css" rel="stylesheet">
+	<link href="http://terriyu.info/blog/theme/local.css" rel="stylesheet">
+	<link href="http://terriyu.info/blog/theme/pygments.css" rel="stylesheet">
+
+    <!-- Feeds -->
+        <link href="http://terriyu.info/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="terriyu@/media/blog Atom Feed">
+        
+	<script>var _gaq=[['_setAccount','UA-41889899-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+        <script type="text/javascript">
+	var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.piwik.krisyu.org/" : "http://www.piwik.krisyu.org/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./terriyu@ media blog_files/piwik.js" type="text/javascript"></script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 3);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript>&lt;p&gt;&lt;img src="http://www.piwik.krisyu.org/piwik.php?idsite=3" style="border:0" alt="" /&gt;&lt;/p&gt;</noscript>
+	<script type="text/javascript">
+	var disqus_identifier = "posts/2013/07/pelican-setup/";
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://terriyublog.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script><script type="text/javascript" async="" src="./terriyu@ media blog_files/embed.js"></script>
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; border: 0; padding: 0; margin: 0}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0 !important; padding: 0 !important; margin: 0 !important; vertical-align: 0 !important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap ! important}
+.MathJax img {display: inline ! important; float: none ! important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block; overflow: hidden; width: 1px; height: 60ex}
+.MathJax .MathJax_EmBox {display: block; overflow: hidden; width: 1px; height: 60em}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Main; src: url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'), url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Main; src: url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff'), url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf') format('opentype'); font-weight: bold}
+@font-face {font-family: MathJax_Main; src: url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'), url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('opentype'); font-style: italic}
+@font-face {font-family: MathJax_Math; src: url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff') format('woff'), url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf') format('opentype'); font-style: italic}
+@font-face {font-family: MathJax_Caligraphic; src: url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff') format('woff'), url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Size1; src: url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff') format('woff'), url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Size2; src: url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff') format('woff'), url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Size3; src: url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff') format('woff'), url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf') format('opentype')}
+@font-face {font-family: MathJax_Size4; src: url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('http://cdn.mathjax.org/mathjax/2.3-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
+.MathJax .mo, .MathJax .mi {color: black ! important}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+			<div class="topbar">
+	  <div class="topbar-inner">
+		<div class="container-fluid">
+		  <a class="brand" href="http://terriyu.info/blog/">terriyu@/media/blog</a>
+			<ul class="nav">
+																			<li><a href="http://terriyu.info/blog/pages/about-me.html">About</a></li>
+																		<li class="active"><a href="http://terriyu.info/blog/category/coding">Coding</a></li>
+									<li><a href="http://terriyu.info/blog/category/event">Event</a></li>
+									<li><a href="http://terriyu.info/blog/category/misc">Misc</a></li>
+							</ul>
+			<p class="pull-right"><a href="http://terriyu.info/blog/archives.html">[archives]</a> <a href="http://terriyu.info/blog/tags.html">[tags]</a> <a href="http://terriyu.info/blog/search.html">[search]</a> </p>
+		</div>
+	  </div>
+	</div>
+
+	<div class="container-fluid">
+	  <div class="sidebar">
+		<div class="well">
+                        <div class="social">
+			<h3>Links</h3>
+			<ul style="list-style: none;">
+								<li><a href="https://github.com/terriyu">Github</a></li>
+								<li><a href="https://twitter.com/terrimyu">Twitter</a></li>
+								<li><a href="https://linkedin.com/in/terriyu">Linkedin</a></li>
+							</ul>
+                        </div> 
+                        <div class="social">
+			<h3>Feeds</h3>
+			<ul style="list-style: none;">
+								<li><a href="http://terriyu.info/blog/feeds/all.atom.xml">All posts</a></li>
+								<li><a href="http://terriyu.info/blog/feeds/category/coding.atom.xml">Coding</a></li>
+								<li><a href="http://terriyu.info/blog/feeds/category/event.atom.xml">Event</a></li>
+								<li><a href="http://terriyu.info/blog/feeds/category/misc.atom.xml">Misc</a></li>
+								<li><a href="http://terriyu.info/blog/feeds/tag/opw.atom.xml">OPW</a></li>
+								<li><a href="http://terriyu.info/blog/feeds/tag/openstack.atom.xml">Openstack</a></li>
+							</ul>
+                        </div>
+		</div>
+	  </div>
+	  <div class="content">
+				<div class="article">
+		<div class="page-header"><h1>How I setup Pelican</h1></div>
+		<div class="well small"><a class="more" href="./terriyu@ media blog_files/terriyu@ media blog.html">Mon 01 July 2013</a>
+by <a class="url fn" href="http://terriyu.info/blog/author/terri-yu.html">Terri Yu </a>
+ in <a href="http://terriyu.info/blog/category/coding">Coding</a>
+tags: <a href="http://terriyu.info/blog/tag/foss/">foss</a> <a href="http://terriyu.info/blog/tag/software/">software</a> <a href="http://terriyu.info/blog/tag/webdev/">webdev</a> </div>
+		<div>
+
+<div id="wrapper" style="width:100%; text-align:center">
+    <img src="./terriyu@ media blog_files/pelican-800px.png" alt="Pelican logo and Github account">
+</div>
+
+<p><br></p>
+<p>I thought it would be useful to go into greater technical detail about how I
+went about setting up Pelican.<sup id="fnref:1"><a class="footnote-ref" href="http://terriyu.info/blog/posts/2013/07/pelican-setup/#fn:1" rel="footnote">1</a></sup></p>
+<p>My machine is running Ubuntu 12.04 LTS.</p>
+
+
+<p>Summary:</p>
+<ol>
+<li>Install Pelican and its dependencies in a virtual environment.  </li>
+<li>Run <code>pelican-quick-start</code> </li>
+<li>Fork the <a href="https://github.com/getpelican/pelican-themes">Pelican themes</a> and
+   <a href="https://github.com/getpelican/pelican-plugins">Pelican plugins</a> on GitHub
+   and clone the forks onto my local machine.  </li>
+<li>Modify Pelican themes to my taste.  I modified the bootstrap theme.</li>
+<li>Make additional directories inside <code>content</code> directory.</li>
+<li>Modify settings in <code>pelicanconf.py</code> and <code>publishconf.py</code></li>
+<li>Setup <a href="http://www.google.com/analytics/">Google Analytics</a>/<a href="http://piwik.org/">Piwik</a> 
+   and <a href="http://disqus.com/">Disqus</a>.</li>
+</ol>
+<h2>Demonstration</h2>
+<p>If you'd like to see some of Pelican's features in action
+(Markdown, formatting, <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-1-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-1" style="width: 3.704em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.839em; height: 0px; font-size: 130%;"><span style="position: absolute; clip: rect(1.685em 1000.002em 2.887em -0.382em); top: -2.546em; left: 0.002em;"><span class="mrow" id="MathJax-Span-2"><span class="mi" id="MathJax-Span-3" style="font-family: MathJax_Math; font-style: italic;">L</span><span class="mspace" id="MathJax-Span-4" style="height: 0.002em; vertical-align: 0.002em; margin-left: -0.334em;"></span><span class="mpadded" id="MathJax-Span-5"><span style="display: inline-block; position: relative; width: 0.531em; height: 0px;"><span style="position: absolute; clip: rect(1.589em 1000.002em 2.406em -0.382em); top: -2.45em; left: 0.002em;"><span class="mrow" id="MathJax-Span-6"><span class="texatom" id="MathJax-Span-7"><span class="mrow" id="MathJax-Span-8"><span class="mstyle" id="MathJax-Span-9"><span class="mrow" id="MathJax-Span-10"><span class="texatom" id="MathJax-Span-11"><span class="mrow" id="MathJax-Span-12"><span class="mi" id="MathJax-Span-13" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;">A</span></span></span></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.262em;"></span></span></span></span><span class="mspace" id="MathJax-Span-14" style="height: 0.002em; vertical-align: 0.002em; margin-left: -0.19em;"></span><span class="mi" id="MathJax-Span-15" style="font-family: MathJax_Math; font-style: italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.099em;"></span></span><span class="mspace" id="MathJax-Span-16" style="height: 0.002em; vertical-align: 0.002em; margin-left: -0.142em;"></span><span class="mpadded" id="MathJax-Span-17"><span style="display: inline-block; position: relative; width: 0.868em; height: 0px;"><span style="position: absolute; clip: rect(1.733em 1000.002em 2.695em -0.382em); top: -2.353em; left: 0.002em;"><span class="mrow" id="MathJax-Span-18"><span class="texatom" id="MathJax-Span-19"><span class="mrow" id="MathJax-Span-20"><span class="mi" id="MathJax-Span-21" style="font-family: MathJax_Math; font-style: italic;">E<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.05em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.55em;"></span></span></span></span><span class="mspace" id="MathJax-Span-22" style="height: 0.002em; vertical-align: 0.002em; margin-left: -0.094em;"></span><span class="mi" id="MathJax-Span-23" style="font-family: MathJax_Math; font-style: italic;">X<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.55em;"></span></span></span><span style="border-left-width: 0.003em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.316em; vertical-align: -0.309em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-1">\LaTeX</script>, etc.), see my earlier post on
+<a href="http://terriyu.info/blog/posts/2013/06/pelican-demo/">demonstrating Pelican</a>.</p>
+<h2>Installing Pelican and dependencies</h2>
+<p>To install Pelican and other Python package dependencies in a virtual 
+environment, I followed the instructions in the official 
+<a href="http://docs.getpelican.com/en/3.2/getting_started.html#installing-pelican">Pelican documentation</a>. </p>
+<div class="highlight"><pre><span class="gp">$</span> virtualenv ~/virtualenvs/pelican
+<span class="gp">$</span> <span class="nb">cd</span> ~/virtualenvs/pelican
+<span class="gp">$</span> . bin/activate
+<span class="gp">$</span> pip install pelican
+<span class="gp">$</span> pip install Markdown
+</pre></div>
+
+
+<p>Don't use <code>sudo pip</code> when installing these Python packages in a virtual 
+environment, otherwise you'll end up installing them globally which defeats the 
+purpose of using virtual environments.</p>
+<p>I wanted to use <a href="http://daringfireball.net/projects/markdown">Markdown</a> to write
+my blog posts, so I needed to install the Python Markdown package in the last
+line.  By default, Pelican uses a 
+<a href="http://pythonhosted.org/Markdown/extensions/extra.html">flavor of Markdown</a>
+that mostly follows 
+<a href="http://michelf.ca/projects/php-markdown/extra/">PHP Markdown Extra</a>.  I
+especially like using the 
+<a href="http://pythonhosted.org/Markdown/extensions/footnotes.html">footnotes extension</a>.</p>
+<p>After you're done working with Pelican, you can leave the virtual environment
+with</p>
+<div class="highlight"><pre><span class="gp">$</span> deactivate
+</pre></div>
+
+
+<h2>Running pelican-quickstart</h2>
+<p>Here are the configuration options I used for <code>pelican-quickstart</code>.  The details
+for SSH upload have been anonymized for security reasons.</p>
+<div class="highlight"><pre><span class="gp">$</span> pelican-quickstart
+<span class="go">Welcome to pelican-quickstart v3.2.2.</span>
+
+<span class="go">This script will help you create a new Pelican-based website.</span>
+
+<span class="go">Please answer the following questions so this script can generate the files</span>
+<span class="go">needed by Pelican.</span>
+
+<span class="gp">&gt;</span> Where <span class="k">do </span>you want to create your new web site? <span class="o">[</span>.<span class="o">]</span> blog
+<span class="gp">&gt;</span> What will be the title of this web site? terriyu@/media/blog 
+<span class="gp">&gt;</span> Who will be the author of this web site? Terri Yu 
+<span class="gp">&gt;</span> What will be the default language of this web site? <span class="o">[</span>en<span class="o">]</span> 
+<span class="gp">&gt;</span> Do you want to specify a URL prefix? e.g., http://example.com   <span class="o">(</span>Y/n<span class="o">)</span> Y
+<span class="gp">&gt;</span> What is your URL prefix? <span class="o">(</span>see above example; no trailing slash<span class="o">)</span> http://terriyu.info
+<span class="gp">&gt;</span> Do you want to <span class="nb">enable </span>article pagination? <span class="o">(</span>Y/n<span class="o">)</span> Y
+<span class="gp">&gt;</span> How many articles per page <span class="k">do </span>you want? <span class="o">[</span>10<span class="o">]</span> 
+<span class="gp">&gt;</span> Do you want to generate a Makefile to easily manage your website? <span class="o">(</span>Y/n<span class="o">)</span> Y
+<span class="gp">&gt;</span> Do you want an auto-reload &amp; simpleHTTP script to assist with theme and site development? <span class="o">(</span>Y/n<span class="o">)</span> Y
+<span class="gp">&gt;</span> Do you want to upload your website using FTP? <span class="o">(</span>y/N<span class="o">)</span> N
+<span class="gp">&gt;</span> Do you want to upload your website using SSH? <span class="o">(</span>y/N<span class="o">)</span> Y
+<span class="gp">&gt;</span> What is the hostname of your SSH server? <span class="o">[</span>localhost<span class="o">]</span> ip.add.ress
+<span class="gp">&gt;</span> What is the port of your SSH server? <span class="o">[</span>22<span class="o">]</span> 
+<span class="gp">&gt;</span> What is your username on that server? <span class="o">[</span>root<span class="o">]</span> username 
+<span class="gp">&gt;</span> Where <span class="k">do </span>you want to put your web site on that server? <span class="o">[</span>/var/www<span class="o">]</span> /somedirectory 
+<span class="gp">&gt;</span> Do you want to upload your website using Dropbox? <span class="o">(</span>y/N<span class="o">)</span> N
+<span class="gp">&gt;</span> Do you want to upload your website using S3? <span class="o">(</span>y/N<span class="o">)</span> N
+</pre></div>
+
+
+<p>I enabled article pagination so that I didn't end up with all the posts on a
+single page.  The <code>Makefile</code> is incredibly useful, so I enabled that.  It allows
+you to compile the website with <code>make html</code> or <code>make devserver</code>.  Usually, when
+I want to test my website, I run <code>make clean</code> (to delete any previously 
+generated files), followed by <code>make devserver</code> to run a fake server on my local
+machine.  I find that <code>make devserver</code> is a better simulation of the website
+than <code>make html</code>.  I'm not sure what the auto-reload &amp; simpleHTTP script is, but
+I enabled it just in case.</p>
+<p>When I'm ready to upload my content to the web host, there are a variety of 
+options.  I don't enable FTP upload because it's not very secure.  I try to
+stick with some transfer method that uses SSH.  You can use <code>make ssh_upload</code>
+which works fine, but I prefer <code>make rsync_upload</code> which uploads using <code>rsync</code>
+and SSH.  Unlike <code>make ssh_upload</code> which uses <code>scp</code> and uploads everything, the 
+<code>rsync</code> command only sends incremental changes, which makes your data transfer 
+much more efficient. </p>
+<p>All the <code>make</code> commands have to be run in the same directory as the <code>Makefile</code>.</p>
+<h2>Fork and clone the GitHub repos for pelican-themes and pelican-plugins</h2>
+<p>I wanted to modify the official 
+<a href="https://github.com/getpelican/pelican-themes">Pelican themes</a> and 
+<a href="https://github.com/getpelican/pelican-plugins">Pelican plugins</a>, and have them
+under version control, so I performed the standard procedure of forking the 
+GitHub repos and cloning the forks.  My procedure was very similar to the
+<a href="https://help.github.com/articles/fork-a-repo">GitHub help page</a> except I cloned
+using the SSH address rather than the https address.</p>
+<h2>Modify Pelican theme to taste</h2>
+<p>I am using the bootstrap theme.  I modified it in the following way:</p>
+<ul>
+<li>Modified <code>static/bootstrap.min.css</code><ul>
+<li>Increased font size and line height</li>
+<li>Changed sizes and alignment of top bar, sidebar, and content</li>
+<li>Eliminated line in page header</li>
+</ul>
+</li>
+<li>Modified <code>bootstrap/static/local.css</code><ul>
+<li>Changed icons to use 
+  <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>'s set</li>
+<li>Changed alignment of icons</li>
+</ul>
+</li>
+<li>Modified <code>static/pygments.css</code> to use the perldoc colors by
+  <a href="http://pygments.org/docs/cmdline/#generating-styles">generating a CSS stylesheet</a> </li>
+<li>Added code to <code>templates/article.html</code> for neighboring links.  This means that
+  if you are on a post, you will see a link for the previous post and a link
+  for the next post.  You need to enable the 
+  <a href="https://github.com/getpelican/pelican-plugins/tree/master/neighbors">neighbors plugin</a> 
+  for this to work. </li>
+<li>Modified <code>templates/base.html</code><ul>
+<li>Added code for including <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-2-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-24" style="width: 3.704em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.839em; height: 0px; font-size: 130%;"><span style="position: absolute; clip: rect(1.685em 1000.002em 2.887em -0.382em); top: -2.546em; left: 0.002em;"><span class="mrow" id="MathJax-Span-25"><span class="mi" id="MathJax-Span-26" style="font-family: MathJax_Math; font-style: italic;">L</span><span class="mspace" id="MathJax-Span-27" style="height: 0.002em; vertical-align: 0.002em; margin-left: -0.334em;"></span><span class="mpadded" id="MathJax-Span-28"><span style="display: inline-block; position: relative; width: 0.531em; height: 0px;"><span style="position: absolute; clip: rect(1.589em 1000.002em 2.406em -0.382em); top: -2.45em; left: 0.002em;"><span class="mrow" id="MathJax-Span-29"><span class="texatom" id="MathJax-Span-30"><span class="mrow" id="MathJax-Span-31"><span class="mstyle" id="MathJax-Span-32"><span class="mrow" id="MathJax-Span-33"><span class="texatom" id="MathJax-Span-34"><span class="mrow" id="MathJax-Span-35"><span class="mi" id="MathJax-Span-36" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;">A</span></span></span></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.262em;"></span></span></span></span><span class="mspace" id="MathJax-Span-37" style="height: 0.002em; vertical-align: 0.002em; margin-left: -0.19em;"></span><span class="mi" id="MathJax-Span-38" style="font-family: MathJax_Math; font-style: italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.099em;"></span></span><span class="mspace" id="MathJax-Span-39" style="height: 0.002em; vertical-align: 0.002em; margin-left: -0.142em;"></span><span class="mpadded" id="MathJax-Span-40"><span style="display: inline-block; position: relative; width: 0.868em; height: 0px;"><span style="position: absolute; clip: rect(1.733em 1000.002em 2.695em -0.382em); top: -2.353em; left: 0.002em;"><span class="mrow" id="MathJax-Span-41"><span class="texatom" id="MathJax-Span-42"><span class="mrow" id="MathJax-Span-43"><span class="mi" id="MathJax-Span-44" style="font-family: MathJax_Math; font-style: italic;">E<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.05em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.55em;"></span></span></span></span><span class="mspace" id="MathJax-Span-45" style="height: 0.002em; vertical-align: 0.002em; margin-left: -0.094em;"></span><span class="mi" id="MathJax-Span-46" style="font-family: MathJax_Math; font-style: italic;">X<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.55em;"></span></span></span><span style="border-left-width: 0.003em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.316em; vertical-align: -0.309em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-2">\LaTeX</script>.  For this to work, you need to enable
+  the <a href="https://github.com/getpelican/pelican-plugins/tree/master/latex">latex plugin</a>.</li>
+<li>Added code for including Piwik content</li>
+<li>Altered sidebar links</li>
+</ul>
+</li>
+<li>Modified <code>templates/index.html</code> to change look of the more... link in the 
+  summaries, got rid of the permalink line, and added the date before each post 
+  title</li>
+<li>Modified <code>templates/metadata.html</code> to use the variable <code>article.locale_date</code>
+  instead of <code>article.date</code> so that it uses my <code>DEFAULT_DATE_FORMAT</code> variable
+  in <code>pelicanconf.py</code></li>
+<li>Added <code>templates/piwik.html</code> (copied from bootstrap2 theme) for Piwik support</li>
+<li>Modified <code>templates/tags.html</code> to sort tags in alphabetical order </li>
+</ul>
+<p>To sort tags in alphabetical order, use</p>
+<div class="highlight"><pre><span class="p">{</span><span class="o">%</span> <span class="k">for</span> <span class="n">tag</span><span class="p">,</span> <span class="n">articles</span> <span class="n">in</span> <span class="n">tags</span><span class="o">|</span><span class="n">sort</span> <span class="o">%</span><span class="p">}</span>
+</pre></div>
+
+
+<h2>Make additional directories inside content directory</h2>
+<p>I made directories <code>2013</code>, <code>images</code>, and <code>pages</code> in the <code>content</code> 
+directory.  This is the way I organized my content.  Posts in 2013 go into 
+<code>2013</code>, photos go into <code>images</code>, and special non-chronological content goes into 
+<code>pages</code>.  I plan to make a new directory for each year and it would contain the 
+posts for that particular year.  The only directory that has to have a specific 
+name is <code>pages</code>.  Pelican treats this name as special.  My 
+<a href="http://terriyu.info/blog/pages/about-me.html">About page</a> is contained inside the directory 
+<code>pages</code>.</p>
+<p>For more information about the file hierarchy, see the 
+<a href="http://docs.getpelican.com/en/3.2/getting_started.html#kickstart-your-site">Pelican documentation</a>.</p>
+<h2>Modify settings in pelicanconf.py and publishconf.py</h2>
+<p>This is my <code>pelicanconf.py</code> file.</p>
+<div class="highlight"><pre><span class="c">#!/usr/bin/env python</span>
+<span class="c"># -*- coding: utf-8 -*- #</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+
+<span class="n">AUTHOR</span> <span class="o">=</span> <span class="s">u'Terri Yu'</span>
+<span class="n">SITENAME</span> <span class="o">=</span> <span class="s">u'terriyu@/media/blog'</span>
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="s">''</span>
+
+<span class="n">TIMEZONE</span> <span class="o">=</span> <span class="s">'America/New_York'</span>
+
+<span class="n">DEFAULT_LANG</span> <span class="o">=</span> <span class="s">u'en'</span>
+
+<span class="c"># Feed generation is usually not desired when developing</span>
+<span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="n">TRANSLATION_FEED_ATOM</span> <span class="o">=</span> <span class="bp">None</span>
+
+<span class="c"># Feeds </span>
+<span class="n">FEEDS</span> <span class="o">=</span>  <span class="p">((</span><span class="s">'All posts'</span><span class="p">,</span> <span class="s">'feeds/all.atom.xml'</span><span class="p">),</span>
+          <span class="p">(</span><span class="s">'Category'</span><span class="p">,</span> <span class="s">'feeds/category'</span><span class="p">),</span>
+          <span class="p">(</span><span class="s">'OPW'</span><span class="p">,</span> <span class="s">'feeds/tag/opw.atom.xml'</span><span class="p">),)</span>
+
+<span class="c"># Social widget</span>
+<span class="n">SOCIAL</span> <span class="o">=</span> <span class="p">((</span><span class="s">'Github'</span><span class="p">,</span> <span class="s">'https://github.com/terriyu'</span><span class="p">),</span>
+          <span class="p">(</span><span class="s">'Twitter'</span><span class="p">,</span> <span class="s">'https://twitter.com/terrimyu'</span><span class="p">),</span>
+          <span class="p">(</span><span class="s">'Linkedin'</span><span class="p">,</span> <span class="s">'https://linkedin.com/in/terriyu'</span><span class="p">),)</span>
+
+<span class="n">DEFAULT_PAGINATION</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c"># Uncomment following line if you want document-relative URLs when developing</span>
+<span class="n">RELATIVE_URLS</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="c"># Formatting for dates</span>
+
+<span class="n">DEFAULT_DATE_FORMAT</span> <span class="o">=</span> <span class="p">(</span><span class="s">'%a </span><span class="si">%d</span><span class="s"> %B %Y'</span><span class="p">)</span>
+
+<span class="c"># Formatting for urls</span>
+
+<span class="n">ARTICLE_URL</span> <span class="o">=</span> <span class="s">"posts/{date:%Y}/{date:%m}/{slug}/"</span>
+<span class="n">ARTICLE_SAVE_AS</span> <span class="o">=</span> <span class="s">"posts/{date:%Y}/{date:%m}/{slug}/index.html"</span>
+
+<span class="n">CATEGORY_URL</span> <span class="o">=</span> <span class="s">"category/{slug}"</span>
+<span class="n">CATEGORY_SAVE_AS</span> <span class="o">=</span> <span class="s">"category/{slug}/index.html"</span>
+
+<span class="n">TAG_URL</span> <span class="o">=</span> <span class="s">"tag/{slug}/"</span>
+<span class="n">TAG_SAVE_AS</span> <span class="o">=</span> <span class="s">"tag/{slug}/index.html"</span>
+
+<span class="c"># Generate yearly archive</span>
+
+<span class="n">YEAR_ARCHIVE_SAVE_AS</span> <span class="o">=</span> <span class="s">'posts/{date:%Y}/index.html'</span>
+
+<span class="c"># Show most recent posts first</span>
+
+<span class="n">NEWEST_FIRST_ARCHIVES</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="c"># Specify theme</span>
+
+<span class="n">THEME</span> <span class="o">=</span> <span class="s">"/home/terri/pelican/pelican-themes/bootstrap"</span>
+
+<span class="c"># Plugins</span>
+
+<span class="n">PLUGIN_PATH</span> <span class="o">=</span> <span class="s">'/home/terri/pelican/pelican-plugins'</span>
+<span class="n">PLUGINS</span> <span class="o">=</span> <span class="p">[</span><span class="s">'latex'</span><span class="p">,</span> <span class="s">'neighbors'</span><span class="p">,</span> <span class="s">'summary'</span><span class="p">]</span>
+
+<span class="c"># Only use LaTeX for selected articles</span>
+
+<span class="n">LATEX</span> <span class="o">=</span> <span class="s">'article'</span>
+</pre></div>
+
+
+<p>The configuration file is mostly self-explanatory.  I uncommented the line for
+relative URLs.  I also specified custom URLs for article, category, tag, and
+year archive, so that the URLs are more concise and don't have any <code>.html</code>
+extension.  For example, instead of <code>posts/2013/06/pelican-setup.html</code>, I would
+have <code>posts/2013/06/pelican-setup/</code>.  I added lines to show most recent posts
+first and to use the <code>bootstrap</code> theme.  I also enabled the <code>latex</code>, 
+<code>neighbors</code>, and <code>summary</code> plugins.  The line <code>LATEX = 'article'</code> allows you to 
+turn on <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-3-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-47" style="width: 3.704em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.839em; height: 0px; font-size: 130%;"><span style="position: absolute; clip: rect(1.685em 1000.002em 2.887em -0.382em); top: -2.546em; left: 0.002em;"><span class="mrow" id="MathJax-Span-48"><span class="mi" id="MathJax-Span-49" style="font-family: MathJax_Math; font-style: italic;">L</span><span class="mspace" id="MathJax-Span-50" style="height: 0.002em; vertical-align: 0.002em; margin-left: -0.334em;"></span><span class="mpadded" id="MathJax-Span-51"><span style="display: inline-block; position: relative; width: 0.531em; height: 0px;"><span style="position: absolute; clip: rect(1.589em 1000.002em 2.406em -0.382em); top: -2.45em; left: 0.002em;"><span class="mrow" id="MathJax-Span-52"><span class="texatom" id="MathJax-Span-53"><span class="mrow" id="MathJax-Span-54"><span class="mstyle" id="MathJax-Span-55"><span class="mrow" id="MathJax-Span-56"><span class="texatom" id="MathJax-Span-57"><span class="mrow" id="MathJax-Span-58"><span class="mi" id="MathJax-Span-59" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;">A</span></span></span></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.262em;"></span></span></span></span><span class="mspace" id="MathJax-Span-60" style="height: 0.002em; vertical-align: 0.002em; margin-left: -0.19em;"></span><span class="mi" id="MathJax-Span-61" style="font-family: MathJax_Math; font-style: italic;">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.099em;"></span></span><span class="mspace" id="MathJax-Span-62" style="height: 0.002em; vertical-align: 0.002em; margin-left: -0.142em;"></span><span class="mpadded" id="MathJax-Span-63"><span style="display: inline-block; position: relative; width: 0.868em; height: 0px;"><span style="position: absolute; clip: rect(1.733em 1000.002em 2.695em -0.382em); top: -2.353em; left: 0.002em;"><span class="mrow" id="MathJax-Span-64"><span class="texatom" id="MathJax-Span-65"><span class="mrow" id="MathJax-Span-66"><span class="mi" id="MathJax-Span-67" style="font-family: MathJax_Math; font-style: italic;">E<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.05em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.55em;"></span></span></span></span><span class="mspace" id="MathJax-Span-68" style="height: 0.002em; vertical-align: 0.002em; margin-left: -0.094em;"></span><span class="mi" id="MathJax-Span-69" style="font-family: MathJax_Math; font-style: italic;">X<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.002em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.55em;"></span></span></span><span style="border-left-width: 0.003em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.316em; vertical-align: -0.309em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-3">\LaTeX</script> support by adding the line <code>Latex:</code> in the head of a post.  I
+like using the <code>summary</code> plugin<sup id="fnref:2"><a class="footnote-ref" href="http://terriyu.info/blog/posts/2013/07/pelican-setup/#fn:2" rel="footnote">2</a></sup> because I can control exactly how much of each
+post is shown on the index page by using markers.  Also, if I set the 
+<code>&lt;!-- PELICAN_END_SUMMARY --&gt;</code> marker before footnotes, then I avoid the
+<a href="https://github.com/getpelican/pelican/pull/885">bug where footnotes appear in the summary</a>. </p>
+<p>Below is my <code>publishconf.py</code> file with the Disqus and Google Analytics 
+specifics anonymized.</p>
+<div class="highlight"><pre><span class="c">#!/usr/bin/env python</span>
+<span class="c"># -*- coding: utf-8 -*- #</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+
+<span class="c"># This file is only used if you use `make publish` or</span>
+<span class="c"># explicitly specify it as your config file.</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">curdir</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">pelicanconf</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="s">'http://terriyu.info/blog'</span>
+<span class="n">RELATIVE_URLS</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="s">'feeds/all.atom.xml'</span>
+<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="s">'feeds/category/</span><span class="si">%s</span><span class="s">.atom.xml'</span>
+<span class="n">TAG_FEED_ATOM</span> <span class="o">=</span> <span class="s">'feeds/tag/</span><span class="si">%s</span><span class="s">.atom.xml'</span>
+
+<span class="n">DELETE_OUTPUT_DIRECTORY</span> <span class="o">=</span> <span class="bp">True</span>
+
+<span class="c"># Following items are often useful when publishing</span>
+
+<span class="n">DISQUS_SITENAME</span> <span class="o">=</span> <span class="s">'disqus-sitename'</span>
+<span class="n">GOOGLE_ANALYTICS</span> <span class="o">=</span> <span class="s">'google-analytics-id'</span>
+
+<span class="n">PIWIK_URL</span> <span class="o">=</span> <span class="s">'url.where.piwik.install.is.located'</span>
+<span class="c">#PIWIK_SSL_URL = ''</span>
+<span class="n">PIWIK_SITE_ID</span> <span class="o">=</span> <span class="s">'1'</span>
+</pre></div>
+
+
+<p>I mostly kept the default file, but added a tag feed.</p>
+<h2>Setup Google Analytics/Piwik and Disqus</h2>
+<p>Just go to the relevant website 
+<a href="http://www.google.com/analytics/">Google Analytics</a>, 
+<a href="http://piwik.org/">Piwik</a>, or <a href="http://disqus.com/">Disqus</a> and follow the
+directions on how to set it up.  Then add the appropriate IDs to your 
+<code>publishconf.py</code> file (see my example file from the last section).  Piwik needs 
+to be installed on a server.  The major web hosts 
+<a href="http://www.bluehost.com/">Bluehost</a> and <a href="http://dreamhost.com/">Dreamhost</a> 
+support one-click Piwik installs.  Or, if you have a friend who is willing to 
+share their Piwik install with you, that also works.  The variable 
+<code>PIWIK_SSL_URL</code> is for extra security and optional.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Top image taken from <a href="https://github.com/getpelican/">Pelican GitHub page</a>&nbsp;<a class="footnote-backref" href="http://terriyu.info/blog/posts/2013/07/pelican-setup/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Currently, there is an incompatibility between the <code>summary</code> plugin and 
+  the version 3.2 release of the Pelican package.  The <code>summary</code> plugin in the
+  <a href="https://github.com/getpelican/pelican-plugins">pelican-plugins GitHub repository</a>
+  has been updated to be consistent with the development version of
+  Pelican.  Therefore, if you try to use the latest <code>summary</code> plugin from 
+  the GitHub repo with Pelican v3.2, you'll get an error related to the
+  <code>DEFAULT_CONFIG</code> variable.  To fix this, go into your cloned Git
+  repo of <code>pelican-plugins</code> and manually change the code in 
+  <code>summary/summary.py</code>.  Simply replace <code>DEFAULT_CONFIG</code> with 
+  <code>_DEFAULT_CONFIG</code> in the file.  See this 
+  <a href="https://github.com/getpelican/pelican-plugins/pull/33/files">pull request</a>
+  for reference.&nbsp;<a class="footnote-backref" href="http://terriyu.info/blog/posts/2013/07/pelican-setup/#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+</ol>
+</div></div>
+                                    ←<a href="http://terriyu.info/blog/posts/2013/06/swc-wise/">
+                            Boston WiSE Software Carpentry boot camp
+                    </a>
+                                                    →<a href="http://terriyu.info/blog/posts/2013/07/why-openstack/">
+                            Why OpenStack
+                    </a>
+                		<div>
+			<h2>Comments</h2>
+		 				<div id="disqus_thread"><iframe id="dsq-2" data-disqus-uid="2" allowtransparency="true" frameborder="0" tabindex="0" title="Disqus" width="100%" src="./terriyu@ media blog_files/saved_resource.html" scrolling="no" horizontalscrolling="no" verticalscrolling="no" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 490px !important;"></iframe></div>					<div>
+	</div>	
+		<footer>
+		  <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme based on <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>.</p>
+		  <p>© Terri Yu</p>
+		</footer>
+	  </div>
+
+	</div>
+
+</div></div><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: italic; font-family: MathJax_Math, sans-serif;"></div></body></html>
