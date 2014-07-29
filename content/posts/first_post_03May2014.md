@@ -1,5 +1,5 @@
 Title: My First Post
-Date: 2014-05-03 13:25
+Date: 2014-05-03
 Category: posts
 Tags: pelican, publishing
 Slug: my-first-post

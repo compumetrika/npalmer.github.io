@@ -3,6 +3,7 @@ Notes on process of writing posts/pages:
     - Make sure that Pelican environment is running:
         source activate blogging
         [todeactivate:   source deactivate blogging]
+        (Alternatively, make sure markdown and poelican are installed in current environment.)
     
     - Write up the page in Markdown. 
     

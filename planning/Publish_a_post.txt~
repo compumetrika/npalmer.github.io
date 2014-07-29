@@ -18,7 +18,7 @@ Notes on process of writing posts/pages:
               instant publishing, this command will do that:
         
         $ cd ~/Sites/compumetrika/npalmer.github.io/
-        $ pelican -o ./ ./content/   
+        $ pelican content/ -o ./   
         
         ALSO NOTE: There's probably a way to automatically write the "index.html"
         file such that it points *down one level* to ./output/* and keeps everything 

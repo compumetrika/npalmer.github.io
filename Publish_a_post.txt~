@@ -18,7 +18,7 @@ Notes on process of writing posts/pages:
               instant publishing, this command will do that:
         
         $ cd ~/Sites/compumetrika/npalmer.github.io/
-        $ pelican content/ -o ./   
+        $ pelican ./content/ -o ./   
         or
         $ pelican ~/Sites/compumetrika/npalmer.github.io/ -o ~/Sites/compumetrika/npalmer.github.io/
         
