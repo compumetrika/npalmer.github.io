@@ -9,3 +9,6 @@ I am a PhD candidate in George Mason's [Department of Computational Social Scien
 
 
 I focus primarily on learning mechanisms applied to household consumption and finance. My advisor is Rob Axtell.
+
+
+[Home](../)

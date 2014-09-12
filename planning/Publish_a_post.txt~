@@ -12,10 +12,10 @@ Steps:
     - No errors -- good sign.          
     - Check    
     
-        ~/Sites/compumetrika/npalmer.github.io/output/
+        ls -la ~/Sites/compumetrika/npalmer.github.io/output/
       
       for the new content. 
-    - For all folders which show up in:
+    - [ see better alternative next bullet] For all folders which show up in:
     
         ~/Sites/compumetrika/npalmer.github.io/output/
     
@@ -23,8 +23,12 @@ Steps:
      
           ~/Sites/compumetrika/npalmer.github.io/
 
-    - Copy everything from output one level up. 
+      Then copy everything from output one level up. 
     
+    - ALTERNATIVE:  simply use:
+    
+        rsync -a output/ ./
+
     - Now check on it with the 
         >> python -m SimpleHTTPServer
 
