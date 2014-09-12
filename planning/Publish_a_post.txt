@@ -1,8 +1,42 @@
+Notes on how to publish the blog
+
+Acutally publishing the blog has been tricky at times. It doesn't always "just work." Need to record steps taken in successful instances. 
+
+================== 22:57, 11 Sep 2014 ================
+Steps:
+    - cd to ~/Sites/compumetrika/npalmer.github.io
+    - rm the output directory (actually moved up two levels then rm'ed), and recreate an empty one
+    - run 
+            pelican ~/Sites/compumetrika/npalmer.github.io/content/
+
+    - No errors -- good sign.          
+    - Check    
+    
+        ls -la ~/Sites/compumetrika/npalmer.github.io/output/
+      
+      for the new content. 
+    - For all folders which show up in:
+    
+        ~/Sites/compumetrika/npalmer.github.io/output/
+    
+      ...delete their equivalents one level up in
+     
+          ~/Sites/compumetrika/npalmer.github.io/
+
+    - Copy everything from output one level up. 
+    
+    - Now check on it with the 
+        >> python -m SimpleHTTPServer
+
+      Then point a browser to 127.0.0.1:8000 and see how it looks. 
+
+________________________________________________________________________________
 Notes on process of writing posts/pages:
 
     - Make sure that Pelican environment is running:
         source activate blogging
         [todeactivate:   source deactivate blogging]
+        (Alternatively, make sure markdown and pelican are installed in current environment.)
     
     - Write up the page in Markdown. 
     
@@ -18,7 +52,9 @@ Notes on process of writing posts/pages:
               instant publishing, this command will do that:
         
         $ cd ~/Sites/compumetrika/npalmer.github.io/
-        $ pelican -o ./ ./content/   
+        $ pelican ./content/ -o ./   
+        or
+        $ pelican ~/Sites/compumetrika/npalmer.github.io/ -o ~/Sites/compumetrika/npalmer.github.io/
         
         ALSO NOTE: There's probably a way to automatically write the "index.html"
         file such that it points *down one level* to ./output/* and keeps everything 
@@ -52,6 +88,5 @@ Notes on process of writing posts/pages:
            
            
     # To Make a new Subdirectory on website:
-    
-           
+     
 

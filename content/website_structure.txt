@@ -1,0 +1,10 @@
+pages
+    `-- Projects
+    `-- Research (Statement, current work)
+    `-- Tools
+    `-- About/Research Statement
+    `-- Contact
+    
+    
+    
+    

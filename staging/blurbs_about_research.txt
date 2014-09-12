@@ -1,0 +1,21 @@
+
+
+
+One can imagine that, in such a model, prices are sticky endogenously -- as agents learn whether a shock is in fact permanent or temporary, they are slow to respond to 
+
+This is, in fact, one of the initial ways in which Lucas envisioned agents potentially encountering sticky prices in Lucas (1979). 
+
+"What might be wanted is a way to allow a 'slider' which 
+
+----------------------------------
+NOTE from Peter: "can directly compare these models with Bayesian factors -- that's great!" 
+
+
+
+----------------------------------
+Something must must have: 
+    - Simple illustration of learning in general HH consumption-savings setting. 
+    
+    - *THE PICTURES* are important for intuition!
+
+
