@@ -1,0 +1,19 @@
+
+In MWG, the chapters which cover these are 1-3, 6, 16, 19. 
+
+There is much more than that, but you should let the literature specific to your research (or your professors, if you are taking the core) guide you.
+
+
+NOTE ON ESTIMATION:
+
+Big problem: "low data-to-paratmers ratio."
+    Some possible solutions:
+    1.  heirarchical estiamtion
+    2.  
+    
+
+
+
+
+
+

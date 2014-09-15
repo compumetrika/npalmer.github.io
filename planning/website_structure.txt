@@ -1,1 +1,10 @@
-/home/npalmer/Sites/compumetrika/npalmer.github.io/content/website_structure.txt
+pages
+    `-- Projects
+    `-- Research (Statement, current work)
+    `-- Tools
+    `-- About/Research Statement
+    `-- Contact
+    
+    
+    
+    

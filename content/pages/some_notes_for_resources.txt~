@@ -1,0 +1,49 @@
+
+
+These are resources I've found useful in my time as a Computational Social Scientist. They are many and varied. if you have found any paritcular ones useful, or if you have updated suggestions, let me know!
+
+
+Some of these are free, some are very not-free. In no particular order:
+
+
+
+
+
+
+Bayesian Estimation/Computation:
+
+As far as I've seen, Bayesian estiamtion doesn't exist outside of computation, at least in practice. I suppose this is true of all econoemtrics,  but it seems particularly true in Bayesian work -- every solution method I've seen appears to be simulation-based. If this isn't true, let me know!
+
+Resources I've found extremely useful:
+
+* Green Tea Press, "Think Bayes"
+    -  The "locomotive problem" is still my favorite demonstration of the idea behind Bayesian estimation. Brilliant. It starts with a seemingly impossible problem and then shows that we have much more information that we first imagined -- first through our ability to form as many hypotheses as we want, and second in our knowledge about likelihood of those hypotheses. The importance of computation is also illustrated -- computers make it possible to "push each hypothesis through the update" to get a posterior. Also, later chapters provide great illustrations of Approximate Bayesian Computation (the apparent main competitor to, eg, Metropolis-Hastings), and hierarchical models. The later is very likely an excellent empirical candidate for "appropriately" estimating agent-based models with a low data-to-parameters ratio. 
+    
+
+* Doing Bayesian Data Analysis
+    - Another great resource for digging into the 
+
+
+
+
+Non-Parametric Statistics:
+
+* Dan Houser's ECON 838 course notes, and course textbook. 
+    - I strongly recommend Dan's course to any CSS students at Mason. It's a great introduction and overview of non-parametric statistical tests. I didn't properly understand non-parametric stats until I took this course. 
+
+
+
+
+Dynamic Programming/Dynamic Economics:
+
+The first chapter title of Ljungquvist and Sargent's classic "Macroeconomics" text says it all: "The Imperialism of Dynamic Methods in Economics." 
+
+* Stachurski's "Macroeconomic Dynamics," and accompanying website quant-econ.net
+    - http://quant-econ.net is now an accompanying website to both John's "Dynamic Macroeconomics" and Sargent's "". I highly recommend getting John's book to accompany you as you work through the notes. He is an excellent teacher and this shows through in his text. One quirk: you will almost certainly be interested in his 
+
+
+
+
+
+
+
