@@ -30,9 +30,20 @@ Steps:
         rsync -a output/ ./
 
     - Now check on it with the 
-        >> python -m SimpleHTTPServer
+        $ python -m SimpleHTTPServer
 
       Then point a browser to 127.0.0.1:8000 and see how it looks. 
+
+*** New few-step process:
+
+    Fewer steps:
+    
+        cd ~/Sites/compumetrika/npalmer.github.io/
+        pelican ~/Sites/compumetrika/npalmer.github.io/content/
+        rsync -a output/ ./
+        python -m SimpleHTTPServer
+    
+    Now check it out.     
 
 ________________________________________________________________________________
 Notes on process of writing posts/pages:
