@@ -1,10 +1,10 @@
-Title: Current Reading: Handling 
+Title: Current Reading: Free Response in Surveys 
 Date: 2014-09-15
 Category: posts
 Tags: literature, experimental, survey
 Slug: current_reading 
 Author: Nathan Palmer
-Summary: In which I discuss some literature. 
+Summary: : This isn't my usual fare, but interesting none-the-less... 
 
 This isn't my usual fare, but interesting none-the-less: [Classification of natural language messages using a coordination game](http://scholar.google.com/citations?view_op=view_citation&hl=en&user=Dy_XT9UAAAAJ&citation_for_view=Dy_XT9UAAAAJ:QIV2ME_5wuYC)
 
