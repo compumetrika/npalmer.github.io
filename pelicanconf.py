@@ -4,16 +4,20 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Nathan Palmer'
 SITENAME = u'Compumetrika'
-SITEURL = ''
+SITEURL = 'http://npalmer.github.io'
 
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+#FEED_ALL_ATOM = None
+#CATEGORY_FEED_ATOM = None
+#TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 LINKS =  (('Pelican', 'http://getpelican.com/'),
@@ -27,7 +31,8 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
-THEME = '/home/npalmer/Sites/crowsfoot/'
+THEME = 'crowsfoot/'
+#THEME = '/home/npalmer/Sites/crowsfoot/'
 
 # Themes without pictures: BT3-Flat, bold, burrito, fresh, 
 #

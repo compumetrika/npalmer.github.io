@@ -5,6 +5,7 @@
 
 body {
     width: 800px;
+    font-size: 18;
 }
 
 html { /* This stuff is for the sticky footer. */

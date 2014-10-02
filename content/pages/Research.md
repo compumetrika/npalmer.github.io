@@ -16,5 +16,5 @@ Publications & Work in Progress
 -------------------------------
 
 
+[Home](http://npalmer.github.io/)
 
-[Home](../)

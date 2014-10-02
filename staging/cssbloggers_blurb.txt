@@ -1,0 +1,7 @@
+nmp:
+  name: Nathan M. Palmer
+  site_url: http://npalmer.github.io/
+  feed_url: http://npalmer.github.io/atom.xml
+  twitter: StochasticNate
+  blurb: "I work on consumption theory and models of financial markets. A major focus is learning under extensive uncertainty. I use a variety of reinforcement learning, approximate dynamic programming, and simulation optimization methods to inject bounded (and even full) rationality into ABMs."
+

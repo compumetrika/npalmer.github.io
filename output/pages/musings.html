@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title>Compumetrika</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="http://npalmer.github.io/theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="http://npalmer.github.io/theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href="http://npalmer.github.io">Compumetrika</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+            <!--pages-->
+                <li><a class="nodec" href="http://npalmer.github.io/pages/about.html">About</a></li>
+                <li><a class="nodec" href="http://npalmer.github.io/pages/contact.html">Contact</a></li>
+                <li class="active"><a class="nodec" href="http://npalmer.github.io/pages/musings.html">Musings</a></li>
+                <li><a class="nodec" href="http://npalmer.github.io/pages/reseach.html">Research</a></li>
+                <li><a class="nodec" href="http://npalmer.github.io/pages/resources.html">Resources</a></li>
+                <li><a class="nodec" href="http://npalmer.github.io/pages/teaching.html">Teaching</a></li>
+            <!-- services icons -->
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+<div class="content">
+  <div class="article">
+    <h1>Musings</h1>
+    <p>I frequently find myself speaking with students and other researchers about how to approach agent-based modeling in economics. If you are a prospective graduate student, a current graduate student, a current researcher in CSS (Computational Social Science) broadly, or even a current economist, this is for you. I have some strong opinions about some of these topics and will at times be blunt. Of course, I also try to be self-aware -- there are multiple paths to success!</p>
+<p>If you have a particular burning question, feel free to email me. I may be a little slow to respond but will answer if I can.</p>
+<p>Much of this advice is actually what I would call "doing science well," but applied to simulation, CSS and economics:</p>
+<h3>Know the Literature -- Know Where Your Work Provides Value-Added</h3>
+<p>I can't say this enough: you <em>must</em> know where your research fits in the current literature. You <em>must</em> be able to answer the question, "what question are you trying to answer?" You must be able to verbalize what need you are filling in the current lit. </p>
+<p>Aside from the "bug catching" nature of finding your place in the literature (many smart minds have already tackled these problems, with the same data you have available!), you need to be speaking in a language and in frameworks that other researchers will quickly understand. You will often have 5-10 minutes to sell an idea as reasonable -- even when you have a 90 minute window to talk. If you can't communicate the idea, you will fail to improve the state of human knowledge -- even if your idea truly is revolutionary. (Usually it isn't.)</p>
+<p>30 years ago <strong><em>___ and </em></strong>____ wrote a great paper about simulation as a tool for economics. Many of their ideas are as true today as they were then, and are the best motivations for ABM -- which of course is simply a simulation technique.</p>
+<p>For ABM in particular, there are good and bad uses of ABM. Get to know the literature and tools and you will find the "gaps." If the gaps have to do with </p>
+<p>-- and uses  In my opinion, you use ABM when you think heterogeneity is important, when you think complex interactions are important, when you have an enormous amount of data which you would like to exploit in a structured and rigorous way. Do you have a complex market or production structure, about which you have a lot of data? ABM may be right for you. Do you think that interactions between particular sets of contractually specified behavior may be important -- and you have data and knowledge of the relevant structures? ABM may be for you. </p>
+<p>An important note: if some of the added str</p>
+<h3>Know your Journals</h3>
+<p>Be able to answer the question, "what are the journals you hope to publish in/what are the journals that authors in your field publish in?" If prospective student, ask this question of your potential classmates and professors. </p>
+<p>Cheat-sheet for economics, very incomplete: 
+    * Field journals: JEDC, JEBO, CE, MacroDynamics
+    * The big ones: Econometrica, JPE, other top 5
+    * The biggest: Nature, Science.</p>
+<h3>Key model structures</h3>
+<p>You need to be able to answer these Qs about your model:</p>
+<div class="highlight"><pre><span class="o">*</span> <span class="nx">How</span> <span class="k">do</span> <span class="nx">agents</span> <span class="nx">form</span> <span class="nx">their</span> <span class="nx">behavior</span><span class="o">?</span> <span class="p">(</span><span class="nx">technically</span><span class="p">,</span> <span class="nx">their</span> <span class="nx">policy</span> <span class="nx">functions</span><span class="o">?</span><span class="p">)</span>
+    <span class="o">*</span> <span class="nx">What</span> <span class="nx">is</span> <span class="nx">their</span> <span class="nx">information</span> <span class="nx">set</span><span class="o">?</span>
+    <span class="o">*</span> <span class="nx">How</span> <span class="k">do</span> <span class="nx">agents</span> <span class="nx">form</span> <span class="nx">expectations</span><span class="o">?</span>
+
+    <span class="o">*</span> <span class="nx">If</span> <span class="nx">agents</span> <span class="nx">are</span> <span class="nx">using</span> <span class="nx">rules</span> <span class="nx">of</span> <span class="nx">thumb</span><span class="o">:</span>
+        <span class="o">*</span> <span class="nx">why</span> <span class="nx">are</span> <span class="nx">these</span> <span class="nx">justified</span><span class="o">?</span>
+        <span class="o">*</span> <span class="k">do</span> <span class="nx">they</span> <span class="nx">improve</span><span class="o">/</span><span class="nx">change</span> <span class="nx">them</span><span class="o">?</span> <span class="nx">how</span><span class="o">?</span> <span class="nx">why</span><span class="o">?</span> 
+        <span class="o">*</span> <span class="nx">can</span> <span class="nx">you</span> <span class="nx">formulate</span> <span class="nx">an</span> <span class="nx">objective</span> <span class="kd">function</span> <span class="k">for</span> <span class="nx">these</span> <span class="nx">agents</span><span class="o">?</span>
+
+    <span class="o">*</span> <span class="nx">If</span> <span class="nx">they</span> <span class="nx">are</span> <span class="nx">optimizing</span><span class="p">,</span> <span class="nx">either</span> <span class="s2">&quot;well&quot;</span> <span class="nx">or</span> <span class="s2">&quot;poorly&quot;</span><span class="o">:</span>
+        <span class="o">*</span> <span class="nx">what</span> <span class="nx">is</span> <span class="nx">their</span> <span class="nx">objective</span> <span class="kd">function</span><span class="o">?</span>
+        <span class="o">*</span> <span class="nx">what</span> <span class="nx">is</span> <span class="nx">their</span> <span class="nx">optimization</span> <span class="nx">process</span><span class="o">?</span>
+        <span class="o">*</span> <span class="nx">Note</span><span class="o">:</span> <span class="nx">I</span> <span class="nx">assume</span> <span class="nx">agents</span> <span class="nx">can</span> <span class="nx">be</span> <span class="nx">optimizing</span> <span class="nx">without</span> <span class="nx">being</span> <span class="nx">fully</span> <span class="nx">rational</span> <span class="o">--</span> <span class="nx">that</span> <span class="nx">is</span><span class="p">,</span> <span class="nx">they</span> <span class="nx">can</span> <span class="nx">be</span> <span class="nx">solving</span> <span class="nx">an</span> <span class="nx">optimization</span> <span class="nx">problem</span> <span class="nx">which</span> <span class="nx">is</span> <span class="nx">simply</span> <span class="o">*</span><span class="nx">not</span> <span class="nx">quite</span> <span class="nx">the</span> <span class="nx">right</span> <span class="nx">one</span><span class="p">.</span><span class="o">*</span> <span class="nx">Perhaps</span> <span class="nx">they</span> <span class="nx">approximate</span> <span class="nx">some</span> <span class="nx">portions</span><span class="p">.</span>
+
+<span class="o">*</span> <span class="nx">How</span> <span class="k">do</span> <span class="nx">prices</span> <span class="nx">form</span><span class="o">?</span> 
+    <span class="o">*</span> <span class="nx">Straightforward</span> <span class="k">if</span> <span class="nx">you</span> <span class="nx">use</span> <span class="nx">market</span> <span class="nx">clearing</span> <span class="nx">and</span> <span class="nx">agent</span> <span class="nx">policy</span> <span class="nx">functions</span>
+    <span class="o">*</span> <span class="nx">If</span> <span class="nx">via</span> <span class="nx">auction</span> <span class="nx">or</span> <span class="nx">random</span> <span class="nx">matching</span><span class="o">/</span><span class="nx">bargaining</span><span class="p">,</span> <span class="nx">agents</span> <span class="nx">will</span> <span class="nx">need</span> <span class="nx">to</span> <span class="nx">form</span> <span class="nx">bid</span><span class="o">/</span><span class="nx">ask</span> <span class="nx">prices</span> <span class="o">--</span> <span class="nx">how</span><span class="o">?</span>
+
+<span class="o">*</span> <span class="nx">If</span> <span class="nx">agents</span> <span class="nx">use</span> <span class="nx">rules</span> <span class="nx">of</span> <span class="nx">thumb</span><span class="p">,</span> <span class="nx">will</span> <span class="nx">your</span> <span class="nx">results</span> <span class="nx">be</span> <span class="nx">destroyed</span> <span class="nx">by</span> <span class="nx">adding</span> <span class="nx">a</span> <span class="nx">single</span> <span class="p">(</span><span class="nx">or</span> <span class="nx">multiple</span><span class="p">)</span> <span class="s2">&quot;fully rational&quot;</span> <span class="nx">agents</span><span class="o">?</span>
+    <span class="o">*</span> <span class="nx">Note</span><span class="o">:</span> <span class="nx">adding</span> <span class="nx">fully</span> <span class="nx">rational</span> <span class="nx">agents</span> <span class="nx">may</span> <span class="nx">require</span> <span class="o">*</span><span class="nx">you</span><span class="o">*</span><span class="p">,</span> <span class="nx">the</span> <span class="nx">modeler</span><span class="p">,</span> <span class="nx">to</span> <span class="nx">iteratively</span> <span class="k">try</span> <span class="nx">out</span> <span class="nx">different</span> <span class="nx">forms</span> <span class="nx">of</span> <span class="nx">expectation</span><span class="o">-</span><span class="nx">formation</span> <span class="k">for</span> <span class="nx">your</span> <span class="s2">&quot;fully rational&quot;</span> <span class="nx">agents</span><span class="p">.</span> <span class="nx">If</span> <span class="nx">their</span> <span class="nx">expectations</span> <span class="nx">are</span> <span class="nx">not</span> <span class="nx">on</span> <span class="nx">average</span> <span class="nx">correct</span><span class="p">,</span> <span class="nx">they</span> <span class="nx">are</span> <span class="nx">not</span> <span class="nx">fully</span> <span class="nx">rational</span><span class="o">!</span> <span class="nx">For</span> <span class="nx">ideas</span><span class="p">,</span> <span class="nx">see</span><span class="o">:</span> <span class="nx">Krusell</span> <span class="nx">Smith</span> <span class="mi">1996</span><span class="p">,</span> <span class="mi">1998</span><span class="p">.</span>
+
+<span class="o">*</span> <span class="nx">How</span> <span class="nx">does</span> <span class="nx">randomness</span> <span class="nx">enter</span> <span class="nx">the</span> <span class="nx">model</span><span class="o">?</span>
+
+<span class="o">*</span> <span class="nx">How</span> <span class="k">do</span> <span class="nx">you</span> <span class="nx">estimate</span> <span class="nx">your</span> <span class="nx">model</span><span class="o">?</span> <span class="nx">What</span> <span class="nx">are</span> <span class="nx">calibrations</span> <span class="nx">vs</span> <span class="nx">estimated</span> <span class="nx">results</span><span class="o">?</span> <span class="p">(</span><span class="nx">be</span> <span class="nx">clear</span> <span class="nx">here</span><span class="o">!</span><span class="p">)</span>
+</pre></div>
+
+
+<h3>Listen to Criticism</h3>
+<p>You will get excellent research direction from criticism. Criticism isn't just someone being mean (although it can be) -- it's usually an excellent window into a weak point in your thinking. Embrace the criticism. Understand it from the point of view of the criticizer. You don't need an answer right away, but bear it in mind as you work on your topic. Some of my best motivations have come from answering criticism. </p>
+<h3>Technical Background</h3>
+<p>Here's my strong opinion: If you think you want to criticize some current piece of research, you <em>must</em> first understand it from the 'accepting' point of view. You must understand, at a deep level, why the idea you think you oppose <em>can be</em> a good idea. Once you understand this, you very often are driven to see the flaws as well, as a consequence. In my experience, half the time the key important flaws have been different than what I first believed. This process usually requires a bit of specialized technical knowledge. </p>
+<p>You must also understand how to take models to data. This will also require technical background, often of a different flavor than for above.</p>
+<p>A good research program (your research program) has these components: theory, methodology, and empirics. You need to identify all parts to have a "complete package" of research, and demonstrate proficiency in each. </p>
+<h4>Theory Background:</h4>
+<p>You must understand the technical background of current economic theory. This can be a big lift -- most of the <a href="http://www.inet.ox.ac.uk/people/view/54">successful</a> [people]](http://www.css.gmu.edu/node/8?q=node/13) <a href="http://carrknight.github.io/ [our](https://sites.google.com/site/mlatek/)">in</a> <a href="http://www.css.gmu.edu/node/8?q=node/163">program</a> <a href="http://www.css.gmu.edu/node/8?q=node/237">who</a> <a href="http://www.css.gmu.edu/node/8?q=node/277">do</a> research in economics or finance have taken "core" graduate courses for economics, often at the PhD level. Mason participates in the <a href="http://www.consortium.org/">Washington Consortium of Schools</a>, and a number of our students have taken at least a bit of the micro core at, eg, UMD (and gotten As!). You should do something similar: at a minimum, learn preference/utility theory, expected utility, and general equilibrium. Those are the basics -- there is more to learn based on your specific field (eg game theory for many of you), but these are the basics in which you must be conversant.</p>
+<h4>Empirical Background:</h4>
+<p>With respect to empirical tools, you need to know econometrics. You need to know the <em>basics</em> (statistical tests and 'basic' regressions) and you need to know the <em>advanced things</em> (panel data, treatment effects, time series). You must be at least conversant in these -- know when they are useful and the basic dangers. As you find your place in the literature you will learn the specific tools needed for your kind of model. </p>
+<p>For complex simulation-based models there are some simulation-based estimator: SMLE (simulated maximum likelihood) and SMM (simulated method of moments), based of course on MLE and GMM. I believe a number of ABMs are "accidentally"/informally estimated by SMM. Read more about this <a href="http://fxdiebold.blogspot.com/2013/07/more-on-strange-american-estimator-gmm.html">here</a> -- and while you're at it, read this(http://stats.stackexchange.com/questions/27662/what-are-the-major-philosophical-methodological-and-terminological-differences#159). If you are a bit more brave, I believe the world of Bayesian estimation will eventually bring some powerful tools to the table for bringing ABMs to data.</p>
+<p>We have a fantastic computational statistics department at Mason. Much of what we do with simulation is <em>essentially</em> a structural computational estimation procedure. It's good to get into the "headspace" of thinking about how estimators work, which I believe these classes will do. </p>
+<p>An aside on 'metrics terminology: you may hear the terms "structural" and "reduced form" thrown around. The "formal" definition (eg on Wikipedia, as of this writing) is a little different than what I've encountered in common use. This <a href="http://www.econjobrumors.com/topic/whats-reduced-form-and-whats-structural-form-estimation">EJMR thread</a> actually has a reasonable 'loose summary' of the common use I've heard. It's surely vastly oversimplified. How does this affect you, ABM-economist? Fitting or calibrating a simulation is almost certainly some version of a structural estimation -- but you may have agents which form expectations via some reduced form estimation (as in the <a href="press.princeton.edu/titles/7097.html">macro</a> least-square learning literature). OR, alternatively, you <em>as the researcher</em> may understand relationships in your own complex model via reduced-form regressions. </p>
+<p><a href="http://npalmer.github.io/">Home</a></p>
+  </div>
+</div>
+
+    <!-- footer -->
+    <footer>
+      <p>
+        © Nathan Palmer, license <a href=""> </a>
+        unless otherwise noted.
+        Generated by <a href= "http://docs.getpelican.com/">Pelican</a> with
+        <a href="http://github.com/porterjamesj/crowsfoot">crowsfoot</a> theme.
+      </p>
+    </footer>
+  </body>
+</html>

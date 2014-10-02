@@ -7,6 +7,5 @@ Author: Nathan M. Palmer
 
 
 
-[Home](../)
-
+[Home](http://npalmer.github.io/)
 
