@@ -1,0 +1,37 @@
+Economics, in a sense, is solving the most important problems that have faced the human race: how should we make choices in an uncertain world, and how should we use the data we have available to us to improve this choice-making process? ^[See below. "Choice under uncertainty in an extremely high-dimentional world."]
+
+The thing is, this is *not at all* a solved problem. In a very small reasonably simple, well-defined subset of problems, this question has been answered. However the trouble is that, very often
+
+And we know this to be true because the models we have for decision-makign do *not* describe how people behave. They are actually very poor projectors, in a lot of ways, of how people will behave. I don't beleive this means that the models are terrible -- but rather the thing we are trying to model itself is *extrememly* hard to model. To look at it another way
+
+I loved the story of _______________, one of the early "applied mathematics adventurers," who actually used geometry and math to guide maritime travel. In once instance, he and the ship he was on (all relatively inexperienced, captain, sailors, all) sailed from ___ to ____. They expected to make it in ____ days, but made it in ___ days instead. Disappointment all around -- this was to be a test of __________'s methods, and they greatly fell short of the captains expectations. However, when they got into port and told the seasoned sailors and captains about their trip, the reponse they got was shock -- "no, you can''t possibly have made it that fast." It turns out that the typical voyage
+
+I read [that book]() at a young age, and still remember it as a striking example of how forming my expectations about something can be vastly off when I have not compared it to how well "experience itself" does, using whatever is the next best option.
+
+In the case of economics, forecasting is often terrible -- but it turns out that some of the best forecasting models are much better than the next alternative, which are simply much much worse. This isn't a statement about the poorness of the forecasting models, but rather the vast difficulty of the problem itself.
+
+
+I have to take a step back, now, and admit that there are a number of fields which tackle this problem: operations research and applied mathematics, of course, and particularly the "decision sciences" subset (it's right there in the name!). Computer science by necessity addresses many of these types of questions (how do you think these packets are being routed through the internet to you right now?)
+
+Economics, however, often explicitly tackles this question in the realm in which it touches everyone's life -- how much should you save for a rainy day, when shoudl you buy a house or car, should you get education, should you get a malaria net, should you start that small business, should you vote on these tax reforms. In addition, economics
+
+
+
+
+
+"One of my favorite quotes from the artcile:   "
+
+"I am firmly convinced that the human mind has done an extraordinarly useful job of optimizing in a highly uncertain and large-dimentional environment. ... I personally often look to how people 'heuristically' solve difficult problems, not for hints on how to form static heuristics for my own little agents to implement, but rather for guidance on how to simplify the objective problem my agents are attempting to solve (i.e. maximize) under high/fundamental uncertainty, low information, and many dimentions -- and in the absolute face of the 'no free lunch' exploration/exploitation tradeoff they inevitably [necessarily] over their reasonable short horizons (short horizons with respect to the amount of experience / time needed to solve the true optimal problem via, eg., DP or asynchronous DP)"
+
+
+
+
+  isn't to say that the models are terrible, but o
+
+ey can often be *better* than the
+
+This article describes one of the best examples I've ever come across
+
+For example, in
+
+Now, there are certainly some very important insights into

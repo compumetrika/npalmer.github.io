@@ -1,0 +1,125 @@
+nav.post_nav{
+    background-color: #efefef;
+    position: fixed;
+    width: 124px;
+    margin-left: 50%;
+    font-size: 12px;
+    padding: 12px;
+    padding-right: 24px;
+    -moz-box-shadow: 0px 2px 4px #ccc; /* FF3.5+ */
+    -webkit-box-shadow: 0px 2px 4px #ccc; /* Saf3.0+, Chrome */
+          box-shadow: 0px 2px 4px #ccc; /* Opera 10.5, IE 9.0 */
+              filter:  progid:DXImageTransform.Microsoft.dropshadow(OffX=12px, OffY=12px, Color='#ccc'); /* IE6,IE7 */
+          -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=12px, OffY=12px, Color='#ccc')"; /* IE8 */
+
+}
+
+.post_nav a.disabled{
+    color: #ccc;
+}
+
+.post_nav a{
+    color: #666;
+    text-decoration: none;
+    text-shadow: 0px 2px 0px #fff;
+}
+
+.post_nav div{
+    display: block;
+    float: left;
+    width: 58px;
+    overflow: hidden;
+    margin-left: 4px;
+}
+
+/*scrolling on code*/
+/*pre {
+    overflow-x:scroll;
+    white-space:pre-wrap; 
+}
+*/
+
+.codebox {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  width: 645px;
+}
+.code {
+  position: relative;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: #F0F3F3;
+}
+.code figcaption {
+  font-size: 10px;
+  position: absolute;
+  bottom: 3px;
+  right: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.highlight pre{
+
+  font-size: 12px;
+  padding: 16px 12px 12px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  overflow-x:scroll;
+}
+
+.prescroll {
+  overflow-x:scroll;
+}
+
+.entry-meta{
+	color: #888;
+	font-size: 12px;
+}
+.entry-meta a, .entry-utility a{
+	color: #888;
+}
+.entry-utility {
+	clear: both;
+	color: #888;
+	font-size: 12px;
+	line-height: 18px;
+	margin-bottom: 20px;
+	margin-top: -10px;
+}
+
+.entry-content, .entry-summary {
+	clear: both;
+}
+
+
+#entry-author-info {
+    background: #f2f7fc;
+    border-top: 4px solid #000;
+    clear: both;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 24px 0;
+    overflow: hidden;
+    padding: 18px 20px;
+  }
+  #entry-author-info #author-avatar {
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    float: left;
+    height: 60px;
+    margin: 0 -104px 0 0;
+    padding: 11px;
+  }
+  #entry-author-info #author-description {
+    float: left;
+    margin: 0 0 0 104px;
+  }
+  #entry-author-info h2 {
+    color: #000;
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 0;
+  }

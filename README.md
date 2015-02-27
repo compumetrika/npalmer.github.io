@@ -1,2 +1,0 @@
-npalmer.github.io
-=================

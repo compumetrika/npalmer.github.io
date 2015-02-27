@@ -1,0 +1,14 @@
+var adcm2_html_95417 = '\x3cdiv\x20id\x3d\x22beta\x2dad\x2dcontainer\x22\x20style\x3d\x22height\x3a\x20250px\x3b\x20width\x3a\x20220px\x3b\x22\x3e\x3c\x2fdiv\x3e';
+var adcm2_html_command_69948 = function() { azHtmlLoad('adcm2', adcm2_html_95417); };
+var adcm2_js_29505 = 'window\x2e_betaAdUrl\x20\x3d\x20\x22http\x3a\x2f\x2fengine\x2eadzerk\x2enet\x2fr\x3fe\x3deyJhdiI6NDE0LCJhdCI6MTcsImJ0IjowLCJjbSI6MTE2MSwiY2giOjExOTgsImNyIjoyNjYzLCJkaSI6IjQ1MGY1NDAwMDQ0MjRmZDRiYzliNTA4YzU4OGY4NTg3IiwiZG0iOjEsImZjIjo0NjUxLCJmbCI6MzMzNSwiaXAiOiIxMDguNTYuMTk5LjI1MyIsImt3IjoiYm9va3MseC11c2VyLXJlZ2lzdGVyZWQseC1ob3N0LXN0YXRzLnN0YWNrZXhjaGFuZ2UuY29tIiwibnciOjIyLCJwYyI6MCwicHIiOjE3NTYsInJ0IjoxLCJyZiI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vIiwic3QiOjEyMDU3LCJ1ayI6InVlMS03NzZiMDEwOGIyNGU0MTA3YWNhMTA1MDQ5NjQ1YjQyOSIsInpuIjo3NiwidHMiOjE0MjQ3MTAyMjc1OTQsImJmIjp0cnVlLCJwbiI6ImFkY20yIiwidXIiOm51bGx9\x26s\x3dTbG8sUZK0njj3dhJyOylnz4Sx\x2d0\x22\x3b';
+var adcm2_js_command_28506 = function() { azScriptInlineLoad('adcm2', adcm2_js_29505); };
+var adcm2_js_81425 = 'http\x3a\x2f\x2fstackexchange\x2ecom\x2fads\x2fbeta\x2dquestion\x2fjs\x3fid\x3dbeta\x2dad\x2dcontainer';
+var adcm2_js_command_56590 = function() { azScriptSRCLoad('adcm2', adcm2_js_81425); };
+var adcm2_pixel_71299 = 'http\x3a\x2f\x2fengine\x2eadzerk\x2enet\x2fi\x2egif\x3fe\x3deyJhdiI6NDE0LCJhdCI6MTcsImJ0IjowLCJjbSI6MTE2MSwiY2giOjExOTgsImNyIjoyNjYzLCJkaSI6IjQ1MGY1NDAwMDQ0MjRmZDRiYzliNTA4YzU4OGY4NTg3IiwiZG0iOjEsImZjIjo0NjUxLCJmbCI6MzMzNSwiaXAiOiIxMDguNTYuMTk5LjI1MyIsImt3IjoiYm9va3MseC11c2VyLXJlZ2lzdGVyZWQseC1ob3N0LXN0YXRzLnN0YWNrZXhjaGFuZ2UuY29tIiwibnciOjIyLCJwYyI6MCwicHIiOjE3NTYsInJ0IjoxLCJyZiI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vIiwic3QiOjEyMDU3LCJ1ayI6InVlMS03NzZiMDEwOGIyNGU0MTA3YWNhMTA1MDQ5NjQ1YjQyOSIsInpuIjo3NiwidHMiOjE0MjQ3MTAyMjc1OTUsImJmIjp0cnVlLCJwbiI6ImFkY20yIn0\x26s\x3df7FxQxhRp5KSklDtXUg2TKre8wU';
+var adcm2_pixel_command_51319 = function() { if(ados_writePixel){ ados_writePixel('adcm2', adcm2_pixel_71299); } else { ados_passbackWritePixel('adcm2', adcm2_pixel_71299, 3335) }; };
+setTimeout(function() {
+  azLoad('adcm2', adcm2_html_command_69948);
+  azLoad('adcm2', adcm2_js_command_28506);
+  azLoad('adcm2', adcm2_js_command_56590);
+  azLoad('adcm2', adcm2_pixel_command_51319);
+}, 100);

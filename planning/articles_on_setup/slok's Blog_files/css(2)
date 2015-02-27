@@ -1,6 +1,0 @@
-@font-face {
-  font-family: 'Marcellus';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Marcellus'), local('Marcellus-Regular'), url(http://themes.googleusercontent.com/static/fonts/marcellus/v2/FJNab1jzp1t7ctjNl8ugHD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-}

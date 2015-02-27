@@ -1,6 +1,0 @@
-@font-face {
-  font-family: 'Gabriela';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Gabriela'), local('Gabriela-Regular'), url(http://themes.googleusercontent.com/licensed/font?kit=1OV4QHDsfqncuTeuzDYhx0O-NZ8T69qbbis4mE8I88g) format('woff');
-}
