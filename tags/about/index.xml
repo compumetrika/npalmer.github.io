@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>About on Compumetrika </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>/tags/about/index.xml/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Wed, 15 Apr 2015 10:54:27 EDT</updated>
+    
+    <item>
+      <title>about</title>
+      <link>/about/</link>
+      <pubDate>Wed, 15 Apr 2015 10:54:27 EDT</pubDate>
+      
+      <guid>/about/</guid>
+      <description>&lt;p&gt;This is an about page. Will see how this rolls out.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

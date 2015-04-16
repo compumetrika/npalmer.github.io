@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2015-04-15T21:36:26-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/pages/teaching/</loc>
+    <lastmod>2015-04-15T21:36:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/pages/interests/</loc>
+    <lastmod>2015-04-15T21:35:38-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/pages/about/</loc>
+    <lastmod>2015-04-15T21:34:49-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/pages/research/</loc>
+    <lastmod>2015-04-15T21:21:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/pages/cv/</loc>
+    <lastmod>2015-04-15T21:21:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/musing/</loc>
+    <lastmod>2015-04-15T10:58:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/test/</loc>
+    <lastmod>2015-04-15T10:57:16-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2015-04-15T10:54:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/welcome/</loc>
+    <lastmod>2015-03-06T17:42:25-05:00</lastmod>
+  </url>
+  
+</urlset>

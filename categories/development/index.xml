@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Development on Compumetrika </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>/categories/development/index.xml/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Wed, 15 Apr 2015 10:57:16 EDT</updated>
+    
+    <item>
+      <title>test</title>
+      <link>/research/test/</link>
+      <pubDate>Wed, 15 Apr 2015 10:57:16 EDT</pubDate>
+      
+      <guid>/research/test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,5 +1,0 @@
-
-
-It's funny -- the ABM guys originally introduced a lot of "heuristic" behavior half because of principle ("people don't really optimize!"), but also half because, if you want to build a complicated enough structural model (for example, mildly realistic range of mortgage options, or large numbers of assets, or the need to save for retirement as well as "for a rainy day" as well as for a car and a house and education, and maybe job choice, and maybe add marriage choice and number of kids choice)  --  it quickly becomes purely a *practical* issue that you need heuristics just to make the solution computationally tractable. Of
-
-And really -- a huge aspect to all of this is that it usually takes someone a couple years to write down, run, get the bugs out, and estimate a new model.

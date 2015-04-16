@@ -1,1 +1,0 @@
-I intend this space, ~/workspace_1/compumetrika/ , to become my main space for my personal/professional webpage. I may change the items which reside in here (particularly the style of the webpage and static site generator), but I also intend to maintain my major "thoughts and ideas" here. 

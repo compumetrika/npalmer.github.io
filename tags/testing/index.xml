@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Testing on Compumetrika </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>/tags/testing/index.xml/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Wed, 15 Apr 2015 10:58:08 EDT</updated>
+    
+    <item>
+      <title>Musing</title>
+      <link>/post/musing/</link>
+      <pubDate>Wed, 15 Apr 2015 10:58:08 EDT</pubDate>
+      
+      <guid>/post/musing/</guid>
+      <description>&lt;p&gt;Another test post.&lt;/p&gt;
+
+&lt;p&gt;In this post, I muse about this deep and important question: is this website generator working? If it isn&amp;rsquo;t, why not? If it is, what would our forefathers think of such a marvel?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
