@@ -7,7 +7,17 @@
     <language>en-us</language>
     
     
-    <updated>Wed, 15 Apr 2015 21:36:26 EDT</updated>
+    <updated>Thu, 16 Apr 2015 11:51:05 EDT</updated>
+    
+    <item>
+      <title>Notebooks</title>
+      <link>/pages/notebooks/</link>
+      <pubDate>Thu, 16 Apr 2015 11:51:05 EDT</pubDate>
+      
+      <guid>/pages/notebooks/</guid>
+      <description>&lt;p&gt;This is a simple collection of my &amp;ldquo;scratchwork notebooks&amp;rdquo; &amp;ndash; a place to store collections of useful information. The subject of these notebooks is far ranging &amp;ndash; some are simply reminders of useful tools while others are more fully fleshed-out research explorations. Below is a simple list of notebooks by topic.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Teaching</title>
@@ -30,16 +40,100 @@
     </item>
     
     <item>
+      <title>Main</title>
+      <link>/pages/main/</link>
+      <pubDate>Wed, 15 Apr 2015 21:34:49 EDT</pubDate>
+      
+      <guid>/pages/main/</guid>
+      <description>
+
+&lt;h2 id=&#34;toc_0&#34;&gt;About&lt;/h2&gt;
+
+&lt;p&gt;I am currently a PhD candidate in the &lt;a href=&#34;http://www.css.gmu.edu/&#34;&gt;Department of Computational Social Science&lt;/a&gt; at George Mason University, specializing in simulation techniques applied to macroeconomics (learning &amp;amp; consumption behavior) and finance (leverage, liquidity, &amp;amp; contagion). &lt;a href=&#34;http://www.css.gmu.edu/?q=node/27&#34;&gt;Rob&lt;/a&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Robert_Axtell&#34;&gt;Axtell&lt;/a&gt; &lt;a href=&#34;http://ideas.repec.org/e/pax2.html&#34;&gt;is&lt;/a&gt; my advisor and I am having a blast working on interesting projects with a lot of very bright people.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note to prospective CSS students:&lt;/strong&gt;  If you are interested in pursuing economics or finance in the CSS program, please feel free to send me an email at &lt;a href=&#34;mailto:npalmer4@masonlive.gmu.edu&#34;&gt;npalmer4@masonlive.gmu.edu&lt;/a&gt;. I&amp;rsquo;m always happy to talk about the work we do and am happy to offer (often blunt) advise as you survey the PhD landscape.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Research&lt;/h2&gt;
+
+&lt;p&gt;My &lt;a href=&#34;/pages/research&#34;&gt;research page&lt;/a&gt; outlines my current publications and work in progress.&lt;/p&gt;
+
+&lt;p&gt;My CV can be found &lt;a href=&#34;/pages/cv&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Notebooks&lt;/h2&gt;
+
+&lt;p&gt;My &lt;a href=&#34;/pages/notebooks&#34;&gt;notebooks&lt;/a&gt; are a simple collection of ideas and resources, spanning a wide range to topics. These exist as a &amp;ldquo;scratchwork are&amp;rdquo; to store things I find useful.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Teaching&lt;/h2&gt;
+
+&lt;p&gt;I have enjoyed teaching computational supplements in [Econ 838]() and [CSS 739]().&lt;/p&gt;
+
+&lt;p&gt;My material for parametric and non-parametric statistics for Econ 838 is only available to students who have taken the course or obtained special permission from the instructor.&lt;/p&gt;
+
+&lt;p&gt;My crash course in dynamic programming for [CSS 739]() can be found in the &lt;a href=&#34;/pages/notebooks&#34;&gt;notebooks&lt;/a&gt; section and on my github page.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Blog&lt;/h2&gt;
+
+&lt;p&gt;My blog (which is extremely rarely updated) can be found &lt;a href=&#34;#/blog&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_5&#34;&gt;Interests&lt;/h2&gt;
+
+&lt;p&gt;Aside from &lt;a href=&#34;http://www.comp-econ.org/&#34;&gt;computational economics&lt;/a&gt; and &lt;a href=&#34;http://www.youtube.com/watch?v=c-sieJVR5TI&#34;&gt;agent-based&lt;/a&gt; &lt;a href=&#34;http://www2.econ.iastate.edu/tesfatsi/ace.htm&#34;&gt;modeling&lt;/a&gt;, I thoroughly enjoy being outdoors. As a native South Texan, I miss Tex-Mex and dance halls (not line dancing, although that can be fun &amp;ndash; I&amp;rsquo;m much more a fan of two-step, waltz, polka, and swing). I recently discovered that some activities I enjoyed in undergrad are nowadays described as &amp;ldquo;freerunning&amp;rdquo; or &amp;ldquo;&lt;a href=&#34;http://en.wikipedia.org/wiki/Parkour&#34;&gt;parkour&lt;/a&gt;.&amp;rdquo; I&amp;rsquo;m certainly not in shape enough for that now, but I&amp;rsquo;d love to get into it again someday&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;On an academic note, I really enjoy &lt;a href=&#34;http://johnstachurski.net/lectures/index.html&#34;&gt;programming and computational approaches&lt;/a&gt;, and the &lt;a href=&#34;http://johnstachurski.net/personal/mathematics.html&#34;&gt;mathematics&lt;/a&gt; needed to understand and use computational models. How people learn and make decisions in uncertain situations is fascinating to me. People are much smarter than they are often given credit, I believe, and capturing their behavior in a highly complex and uncertain environments is a fascinating topic. Optimizing behavior may at times seem to vastly over-estimate an agent&amp;rsquo;s ability, but rule-of-thumb behavior may vastly underestimate an agent&amp;rsquo;s ability. I am most attracted to learning processes based on generalizations to dynamic programming. There is a tremendous literature in this area and I believe.&lt;/p&gt;
+
+&lt;p&gt;I strongly believe that agent-based modeling is simply the next step in computational economic modeling, incorporating insights from software engineering to construct models that &amp;ldquo;trace out&amp;rdquo; the effects of &amp;ldquo;well tested theory&amp;rdquo; (to use &lt;a href=&#34;http://www.aeaweb.org/articles.php?doi=10.1257/jep.10.1.69&#34;&gt;Kydland and Prescott&amp;rsquo;s&lt;/a&gt; terminology). The &amp;ldquo;black box&amp;rdquo; of agent-based modeling need not exist.&lt;/p&gt;
+
+&lt;p&gt;Ongoing research in areas such as &lt;a href=&#34;http://www.nber.org/papers/w17783&#34;&gt;boundedly rational dynamic programming&lt;/a&gt;, &lt;a href=&#34;http://www2.econ.iastate.edu/tesfatsi/aemind.htm&#34;&gt;Q-learning &amp;amp; related tools&lt;/a&gt;, and &lt;a href=&#34;http://ideas.repec.org/p/ore/uoecwp/2010-15.html&#34;&gt;N-Period-ahead learning&lt;/a&gt; are just a few examples of topics that interest me quite a bit. Another approach, of course, is to &amp;ldquo;mix&amp;rdquo; some optimal and non-optimal behavior, either in a single agent (as in Laibson et al.&amp;rsquo;s  &lt;a href=&#34;http://www.aeaweb.org/articles.php?doi=10.1257/jep.24.4.67&#34;&gt;Natural Expectations&lt;/a&gt;, which is begging to be combined with a Bayesian approach a la &lt;a href=&#34;http://www.pnas.org/content/104/22/9493.full&#34;&gt;fictive learning&lt;/a&gt; ) or in a population of agents (as in &lt;a href=&#34;http://www.frbsf.org/economics/economists/staff.php?klansing&#34;&gt;Lansing&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://editorialexpress.com/cgi-bin/conference/download.cgi?db_name=CEF2012&amp;amp;paper_id=329&#34;&gt;work&lt;/a&gt; and &lt;a href=&#34;http://www.wouterdenhaan.com/&#34;&gt;Wouter den Haan&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://www.wouterdenhaan.com/numerical/boundedrationalityslides.pdf&#34;&gt;work&lt;/a&gt;). Beyond these approaches, of course, are econometric and statistical learning approaches, game-theoretic approaches, and AI and evolutionary approaches. For me an ideal outcome of these processes is a modular learning and expectations-formation procedures that are well-understood both at the individual level as well as at the aggregate level, which may then be used in any number of large-scale simulations.&lt;/p&gt;
+
+&lt;p&gt;At the end of the day, we want to discover the simplest, theoretically well-understood learning processes which closely match household and individual behavior. We want &amp;ldquo;econometric rationality&amp;rdquo; &amp;ndash; a convex combination of a few simple learning models which give us zero error in expectation when forecasting population behavior. I strongly suspect that the &amp;ldquo;true structural parameters&amp;rdquo; which fulfill the Lucas Critique will in fact be learning parameters as well as preference parameters.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>/pages/about/</link>
       <pubDate>Wed, 15 Apr 2015 21:34:49 EDT</pubDate>
       
       <guid>/pages/about/</guid>
-      <description>&lt;p&gt;Welcome to my homepage - very much a work in progress! I am currently a PhD candidate in the &lt;a href=&#34;http://www.css.gmu.edu/&#34;&gt;Department of Computational Social Science&lt;/a&gt; at George Mason University, specializing in simulation techniques applied to consumption theory (learning and welfare), macroeconomics (expecations, dynamics and estimation), and macro-finance (leverage, liquidity, &amp;amp; contagion). &lt;a href=&#34;http://www.css.gmu.edu/?q=node/27&#34;&gt;Rob&lt;/a&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Robert_Axtell&#34;&gt;Axtell&lt;/a&gt; &lt;a href=&#34;http://ideas.repec.org/e/pax2.html&#34;&gt;is&lt;/a&gt; my advisor and I am having a blast working on interesting projects with a lot of very bright people.&lt;/p&gt;
+      <description>
 
-&lt;p&gt;Note to prospective CSS students:  If you are interested in pursuing economics or finance in the CSS program, please feel free to send me an email at &lt;a href=&#34;mailto:npalmer4@masonlive.gmu.edu&#34;&gt;npalmer4@masonlive.gmu.edu&lt;/a&gt;. I&amp;rsquo;m always happy to talk about the work we do and am happy to offer (often blunt) advise as you survey the PhD landscape.&lt;/p&gt;
+&lt;p&gt;I am a PhD candidate in the &lt;a href=&#34;http://www.css.gmu.edu/&#34;&gt;Department of Computational Social Science&lt;/a&gt; at George Mason University, specializing in simulation techniques applied to macroeconomics (learning &amp;amp; consumption behavior) and finance (leverage, liquidity, &amp;amp; contagion). &lt;a href=&#34;http://www.css.gmu.edu/?q=node/27&#34;&gt;Rob&lt;/a&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Robert_Axtell&#34;&gt;Axtell&lt;/a&gt; &lt;a href=&#34;http://ideas.repec.org/e/pax2.html&#34;&gt;is&lt;/a&gt; my advisor and I am having a blast working on interesting projects with a lot of very bright people.&lt;/p&gt;
 
-&lt;p&gt;A similar offer stands for current economists and researchers &amp;ndash; feel free to drop me an email, I&amp;rsquo;m happy to chat.&lt;/p&gt;
+&lt;p&gt;Note to prospective CSS students:  If you are interested in pursuing economics or finance in the CSS program, please feel free to send me an email at &lt;a href=&#34;mailto:npalmer4@masonlive.gmu.edu&#34;&gt;npalmer4@masonlive.gmu.edu&lt;/a&gt;. I&amp;rsquo;m always happy to talk about the work we do and am happy to offer (often blunt) advice as you survey the PhD landscape.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Research&lt;/h2&gt;
+
+&lt;p&gt;My &lt;a href=&#34;/pages/research&#34;&gt;research page&lt;/a&gt; outlines my current publications and work in progress.&lt;/p&gt;
+
+&lt;p&gt;My CV can be found &lt;a href=&#34;/pages/cv&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Notebooks&lt;/h2&gt;
+
+&lt;p&gt;My &lt;a href=&#34;/pages/notebooks&#34;&gt;notebooks&lt;/a&gt; are a simple collection of ideas and resources, spanning a wide range to topics. These exist as a &amp;ldquo;scratchwork area&amp;rdquo; to store things I find useful.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Teaching&lt;/h2&gt;
+
+&lt;p&gt;I have enjoyed teaching computational supplements in [Econ 838]() and [CSS 739]().&lt;/p&gt;
+
+&lt;p&gt;My material for parametric and non-parametric statistics for Econ 838 is only available to students who have taken the course or obtained special permission from the instructor.&lt;/p&gt;
+
+&lt;p&gt;My crash course in dynamic programming for [CSS 739]() can be found in the &lt;a href=&#34;/pages/notebooks&#34;&gt;notebooks&lt;/a&gt; section and on my github page.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Blog&lt;/h2&gt;
+
+&lt;p&gt;My blog (which is updated somewhat infrequently) can be found &lt;a href=&#34;/#blog&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Interests&lt;/h2&gt;
+
+&lt;p&gt;Aside from &lt;a href=&#34;http://www.comp-econ.org/&#34;&gt;computational economics&lt;/a&gt; and &lt;a href=&#34;http://www.youtube.com/watch?v=c-sieJVR5TI&#34;&gt;agent-based&lt;/a&gt; &lt;a href=&#34;http://www2.econ.iastate.edu/tesfatsi/ace.htm&#34;&gt;modeling&lt;/a&gt;, I thoroughly enjoy being outdoors. As a native South Texan, I miss Tex-Mex and dance halls (not line dancing, although that can be fun &amp;ndash; I&amp;rsquo;m much more a fan of two-step, waltz, polka, and swing). I recently discovered that some activities I enjoyed in undergrad are nowadays described as &amp;ldquo;freerunning&amp;rdquo; or &amp;ldquo;&lt;a href=&#34;http://en.wikipedia.org/wiki/Parkour&#34;&gt;parkour&lt;/a&gt;.&amp;rdquo; I&amp;rsquo;m certainly not in shape enough for that now, but I&amp;rsquo;d love to get into it again someday&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;On an academic note, I really enjoy &lt;a href=&#34;http://johnstachurski.net/lectures/index.html&#34;&gt;programming and computational approaches&lt;/a&gt;, and the &lt;a href=&#34;http://johnstachurski.net/personal/mathematics.html&#34;&gt;mathematics&lt;/a&gt; needed to understand and use computational models. How people learn and make decisions in uncertain situations is fascinating to me. People are much smarter than they are often given credit, I believe, and capturing their behavior in a highly complex and uncertain environments is a fascinating topic. Optimizing behavior may at times seem to vastly over-estimate an agent&amp;rsquo;s ability, but rule-of-thumb behavior may vastly underestimate an agent&amp;rsquo;s ability. I am most attracted to learning processes based on generalizations to dynamic programming. There is a tremendous literature in this area and I believe this approach is rigorous and an excellent framework for many aspects of learning.&lt;/p&gt;
+
+&lt;p&gt;I strongly believe that agent-based modeling is simply the next step in computational economic modeling, incorporating insights from software engineering to construct models that &amp;ldquo;trace out&amp;rdquo; the effects of &amp;ldquo;well tested theory&amp;rdquo; (to use &lt;a href=&#34;http://www.aeaweb.org/articles.php?doi=10.1257/jep.10.1.69&#34;&gt;Kydland and Prescott&amp;rsquo;s&lt;/a&gt; terminology). The &amp;ldquo;black box&amp;rdquo; of agent-based modeling need not exist.&lt;/p&gt;
+
+&lt;p&gt;Ongoing research in areas such as &lt;a href=&#34;http://www.nber.org/papers/w17783&#34;&gt;boundedly rational dynamic programming&lt;/a&gt;, &lt;a href=&#34;http://www2.econ.iastate.edu/tesfatsi/aemind.htm&#34;&gt;Q-learning &amp;amp; related tools&lt;/a&gt;, and &lt;a href=&#34;http://ideas.repec.org/p/ore/uoecwp/2010-15.html&#34;&gt;N-Period-ahead learning&lt;/a&gt; are just a few examples of topics that interest me quite a bit. Another approach, of course, is to &amp;ldquo;mix&amp;rdquo; some optimal and non-optimal behavior, either in a single agent (as in Laibson et al.&amp;rsquo;s  &lt;a href=&#34;http://www.aeaweb.org/articles.php?doi=10.1257/jep.24.4.67&#34;&gt;Natural Expectations&lt;/a&gt;, which is begging to be combined with a Bayesian approach a la &lt;a href=&#34;http://www.pnas.org/content/104/22/9493.full&#34;&gt;fictive learning&lt;/a&gt; ) or in a population of agents (as in &lt;a href=&#34;http://www.frbsf.org/economics/economists/staff.php?klansing&#34;&gt;Lansing&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://editorialexpress.com/cgi-bin/conference/download.cgi?db_name=CEF2012&amp;amp;paper_id=329&#34;&gt;work&lt;/a&gt; and &lt;a href=&#34;http://www.wouterdenhaan.com/&#34;&gt;Wouter den Haan&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;http://www.wouterdenhaan.com/numerical/boundedrationalityslides.pdf&#34;&gt;work&lt;/a&gt;). Beyond these approaches, of course, are econometric and statistical learning approaches, game-theoretic approaches, and AI and evolutionary approaches. For me an ideal outcome of these processes is a modular learning and expectations-formation procedures that are well-understood both at the individual level as well as at the aggregate level, which may then be used in any number of large-scale simulations.&lt;/p&gt;
+
+&lt;p&gt;At the end of the day, we want to discover the simplest, theoretically well-understood learning processes which closely match household and individual behavior. We want &amp;ldquo;econometric rationality&amp;rdquo; &amp;ndash; a convex combination of a few simple learning models which give us zero error in expectation when forecasting population behavior. I strongly suspect that the &amp;ldquo;true structural parameters&amp;rdquo; which fulfill the Lucas Critique will in fact be learning parameters as well as preference parameters.&lt;/p&gt;
 </description>
     </item>
     
