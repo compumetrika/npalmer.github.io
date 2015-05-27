@@ -3,7 +3,7 @@
   <channel>
       <title>Test on Compumetrika </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>/categories/test/index.xml/</link>
+    <link>http://localhost:1313/categories/test/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Musing</title>
-      <link>/post/musing/</link>
+      <link>http://localhost:1313/post/musing/</link>
       <pubDate>Wed, 15 Apr 2015 10:58:08 EDT</pubDate>
       
-      <guid>/post/musing/</guid>
+      <guid>http://localhost:1313/post/musing/</guid>
       <description>&lt;p&gt;Another test post.&lt;/p&gt;
 
 &lt;p&gt;In this post, I muse about this deep and important question: is this website generator working? If it isn&amp;rsquo;t, why not? If it is, what would our forefathers think of such a marvel?&lt;/p&gt;

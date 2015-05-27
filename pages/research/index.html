@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title> Research &middot; Compumetrika </title>
     
-    <link rel="stylesheet" type="text/css" href="/css/uno.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/lightGallery.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:1313/css/uno.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:1313/css/lightGallery.css" />
     
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:1313/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="http://localhost:1313/favicon.ico">
     
     <link href="" rel="alternate" type="application/rss+xml" title="Compumetrika" />
     
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/main.min.js">
+    <script src="http://localhost:1313/js/jquery.min.js"></script>
+    <script src="http://localhost:1313/js/main.min.js">
     </script>
 </head>
 
@@ -30,7 +30,7 @@
         <div class="panel-main__inner panel-inverted">
             <div class="panel-main__content"> 
                 <h1 class="panel-cover__title panel-title">
-                    <a href=""  title="link to homepage for Compumetrika">Compumetrika</a>
+                    <a href="http://localhost:1313"  title="link to homepage for Compumetrika">Compumetrika</a>
                 </h1>
                 <hr class="panel-cover__divider" />
                 <p class="panel-cover__description">  Nathan M. Palmer  </p>
@@ -39,12 +39,12 @@
                     <nav class="cover-navigation cover-navigation--primary">
                         <ul class="navigation">
                         </br> 
-                                <li class="navigation__item"><a href="/pages/about" title="About " class="blog-button">About</a> </li>
+                                <li class="navigation__item"><a href="http://localhost:1313/pages/about" title="About " class="blog-button">About</a> </li>
                                 </br>
                             </br> 
-                                <li class="navigation__item"><a href="/pages/research" title="Research " class="blog-button">Research</a> </li>
+                                <li class="navigation__item"><a href="http://localhost:1313/pages/research" title="Research " class="blog-button">Research</a> </li>
                                 </br>
-                            </br><li class="navigation__item"><a href="/#blog" title="link to Compumetrika blog" class="blog-button">Blog</a> </li>
+                            </br><li class="navigation__item"><a href="http://localhost:1313/#blog" title="link to Compumetrika blog" class="blog-button">Blog</a> </li>
                         </ul>
                     </nav> <nav class="cover-navigation navigation--social">
     <ul class="navigation"> 
@@ -78,7 +78,7 @@
             <div class="panel-main__inner panel-inverted">
                 <div class="panel-main__content"> 
                     <h1 class="panel-cover__title panel-title">
-                        <a href=""  title="link to homepage for Compumetrika">Compumetrika</a>
+                        <a href="http://localhost:1313"  title="link to homepage for Compumetrika">Compumetrika</a>
                     </h1>
                     <hr class="panel-cover__divider" />
                     <p class="panel-cover__description">  Nathan M. Palmer  </p>
@@ -86,9 +86,9 @@
                     <div class="navigation-wrapper">
                         <nav class="cover-navigation cover-navigation--primary">
                             <ul class="navigation">
-                                <li class="navigation__item"><a href="/#blog" title="link to Compumetrika blog" class="blog-button">Blog</a> </li>
+                                <li class="navigation__item"><a href="http://localhost:1313/#blog" title="link to Compumetrika blog" class="blog-button">Blog</a> </li>
                                 </br> 
-                                <li class="navigation__item"><a href="/pages/cv" title="link to my CV " class="blog-button">CV</a> </li>
+                                <li class="navigation__item"><a href="http://localhost:1313/pages/cv" title="link to my CV " class="blog-button">CV</a> </li>
                                 </br>  </ul>
                         </nav> <nav class="cover-navigation navigation--social">
     <ul class="navigation"> 
@@ -118,11 +118,62 @@
             <div class="content-wrapper__inner">
                 <div class="post">
                     <h1>Research</h1>
-                    <p>This is my research stand-in page. Fun and new things up soon!</p>
+                    
+
+<p>My research focuses on how to incorporate learning-to-optimize behavior from the dynamic programming literature into basic consumption-savings and portfolio decision problems (whether household, market maker, or other). In the past few decades the dynamic programming literature has expanded rapidly in the direction of <em>learning</em> the solution to dynamic optimization problems from <em>streams of experience</em>. For a particular stochastic optimization problem, streams of experience generated by the DGP replace full knowledge of the state-space. Instead of making sweeps over the state space to find the fixed point of a dynamic program (i.e. the optimal value and policy functions), a learning-to-optimize method takes streams of experience from a DGP to improve a policy and value function as the data arrives. Convergence often rests on the same monotoncity and contraction mapping properties which ensure that traditional dynamic programs converges. In this setting, optimization can occur &ldquo;online,&rdquo; as an agent experiences their problem. There are a number of ways to approximate portions of the solution method, which can make previously intractable problems tractable.</p>
+
+<p>New theoretical questions emerge from this framework, including the amount of learning time required to obtain an optimal solution from a given starting point, or, conversely, given a fixed time spent learning, the welfare cost of the policies found in that time. Additionally, the &ldquo;exploitation/exploration&rdquo; tradeoff is highlighted in this approach. There is always an opportunity cost to &ldquo;exploring&rdquo; a new policy when one doesn&rsquo;t have full information: one may waste valuable time on a poor policy, when one could have simply exploited the best policy found thus far. Perhaps not surprisingly, learning from others can be a very important part of this process.</p>
+
+<p>The applications of this are multifaceted. Appropriate approximation techniques can allow previously intractable problems to be solved for their optimal solution - for example, models with highly heterogeneous agents. Alternatively, learning-to-optimize may provide a framework for bounded rationality itself, based on first principles.</p>
+
+<p>My research takes the latter approach. The goal is to find the simplest learning-to-optimize behavior which allows agents in large, complicated environments to none-the-less learn near-optimal policies in reasonable time. This is immediately applicable to any large agent-based model. Conversely, it may also suggest that even in a simpler setting, the transiton path to a long-term equilibrium may be very different from a purely rational-expectation baseline.</p>
+
+<h2 id="toc_0">Publications &amp; Work in Progress</h2>
+
+<ul>
+<li>Geanakoplos et al (2012), &ldquo;Getting at Systemic Risk via an Agent-Based Model of the Housing Market.&rdquo; <em>American Economic Review</em>, 102(3): 53–58.
+
+<ul>
+<li>Efforts to address agent behavior in this highly complicated setting motivated my dissertation research.</li>
+<li>Paper <a href="http://www.aeaweb.org/articles.php?doi=10.1257/aer.102.3.53">here</a></li>
+<li>More in Peter Howitt&rsquo;s Session 2 <a href="http://bfi.uchicago.edu/events/macro-financial-modeling-meeting-spring-2013">here</a>; in particular, see the discussion by Sufi, Sims, Cochrane, Hansen, and others. Cochrane&rsquo;s questions in particular are what I hope to address in my own research. (<a href="https://web.archive.org/web/*/http://bfi.uchicago.edu/events/macro-financial-modeling-meeting-spring-2013">Archived</a>.)</li>
+<li>Rob Axtell discusses this model briefly near the end of <a href="http://www.youtube.com/watch?v=c-sieJVR5TI">this talk</a>, around 12:40.</li>
+<li>Updated versions:
+
+<ul>
+<li>Slides, <a href="https://www.bundesbank.de/Redaktion/EN/Downloads/Bundesbank/Research_Centre/Conferences/2014/2014_06_04_eltville_08_agent_based_model_of_housing_market_bubble_presentation.pdf?__blob=publicationFile">2014</a></li>
+<li>Paper, <a href="https://www.bundesbank.de/Redaktion/EN/Downloads/Bundesbank/Research_Centre/Conferences/2014/2014_06_05_eltville_10_axtell.pdf?__blob=publicationFile">2014</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<hr />
+
+<ul>
+<li>My consumption research <a href="http://editorialexpress.com/conference/CEF2012/program/CEF2012.html#31">presented</a> at <a href="http://comp-econ.org/CEF_2012/index.htm">CEF 2012</a>.
+
+<ul>
+<li>Very preliminary version of the paper is <a href="https://editorialexpress.com/cgi-bin/conference/download.cgi?db_name=CEF2012&amp;paper_id=450">linked here</a>; an <em><strong>extensively</strong></em> updated version is in progress and will be out any day now&hellip;</li>
+<li>CEF Slides can be found <a href="https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=ZGVmYXVsdGRvbWFpbnxuYXRoYW5tcGFsbWVyfGd4OjEzNTYzNzExMTExMTAyMGE">here</a>.</li>
+</ul></li>
+</ul>
+
+<hr />
+
+<ul>
+<li>The Heterogeneous-Agent Computational toolKit (HACK) with Chris Carroll: an effort to bring together cutting-edge tools from research and software development to create a modular, extensible set of code libraries for the easy creation of highly-heterogeneous agent models. These are to include models in which some &ldquo;alpha&rdquo; fraction of truly rational agents are mixed in with (1-alpha) non-optimizing agents. A truly rational agent in this setting, of course, must anticipate the actions and outcomes of both the non-optimizing agents as well as the optimizing agents.
+
+<ul>
+<li>This is a particularly exciting project &ndash; much more coming soon!</li>
+</ul></li>
+</ul>
 
                 </div>
             </div>
         </div>
-    </body>
+    <script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 
 </html>

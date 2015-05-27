@@ -3,7 +3,7 @@
   <channel>
       <title>Notebooks on Compumetrika </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>/tags/notebooks/index.xml/</link>
+    <link>http://localhost:1313/tags/notebooks/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>Notebooks</title>
-      <link>/pages/notebooks/</link>
+      <link>http://localhost:1313/pages/notebooks/</link>
       <pubDate>Thu, 16 Apr 2015 11:51:05 EDT</pubDate>
       
-      <guid>/pages/notebooks/</guid>
+      <guid>http://localhost:1313/pages/notebooks/</guid>
       <description>&lt;p&gt;This is a simple collection of my &amp;ldquo;scratchwork notebooks&amp;rdquo; &amp;ndash; a place to store collections of useful information. The subject of these notebooks is far ranging &amp;ndash; some are simply reminders of useful tools while others are more fully fleshed-out research explorations. Below is a simple list of notebooks by topic.&lt;/p&gt;
 </description>
     </item>
