@@ -3,7 +3,7 @@
   <channel>
       <title>About on Compumetrika </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>/categories/about/index.xml/</link>
+    <link>http://npalmer.github.io/categories/about/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>about</title>
-      <link>/about/</link>
+      <link>http://npalmer.github.io/about/</link>
       <pubDate>Wed, 15 Apr 2015 10:54:27 EDT</pubDate>
       
-      <guid>/about/</guid>
+      <guid>http://npalmer.github.io/about/</guid>
       <description>&lt;p&gt;This is an about page. Will see how this rolls out.&lt;/p&gt;
 </description>
     </item>
